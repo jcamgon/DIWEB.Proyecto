@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CriticMedia</title>
+    <link rel="icon" type="image/x-icon" href="resources/img/logo.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="scss/custom.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand align-items-stretch" href="index.html">
+      <img
+        src="resources/img/logo.png"
+        alt="Logo"
+        class="d-inline-block align-text-middle"
+      />
+      <b>CriticMedia</b>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item dropdown mx-2">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Media
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Películas</a></li>
+            <li><a class="dropdown-item" href="#">Series de Televisión</a></li>
+            <li><a class="dropdown-item" href="#">Anime</a></li>
+          </ul>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Sobre nosotros</a>
+        </li>
+
+        <!-- Buscador, oculto en pantallas pequeñas -->
+        <li class="d-none d-lg-block">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button type="button" class="btn btn-outline-light">
+              Buscar
+            </button>
+          </form>
+        </li>
+
+        <!-- Botón de login -->
+        <li class="ms-3">
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Login
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="resources/img/flags/es.png"
+              alt="Español"
+              width="24"
+              height="20"
+            />
+            Español
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">
+                <img
+                  src="resources/img/flags/en.png"
+                  alt="English"
+                  width="24"
+                  height="20"
+                />
+                English
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img
+                  src="resources/img/flags/fr.png"
+                  alt="Français"
+                  width="24"
+                  height="20"
+                />
+                Français
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Modal de Login -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Usuario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="Introduce tu usuario"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Introduce tu contraseña"
+                />
+              </div>
+              <button type="button" class="btn btn-outline-dark">Iniciar Sesión</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Login -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Usuario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="Introduce tu usuario"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Introduce tu contraseña"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Iniciar sesión
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-4">
+      <div class="row d-flex align-items-stretch">
+        <div class="col-lg-4 d-flex flex-column justify-content-center">
+          <h2 class="text-center mb-3">Breaking Bad</h2>
+          <div class="text-center mb-4">
+            <img
+              src="resources/img/poster/bb_poster.jpg"
+              class="rounded w-50"
+              alt="bb-poster"
+            />
+          </div>
+          <p class="text-center text-muted">
+            Un profesor de química de secundaria se convierte en fabricante de
+            metanfetamina y se asocia con un ex alumno para crear un imperio de
+            la droga, mientras que su vida se sale de control.
+          </p>
+        </div>
+        <div class="col-lg-8">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="resources/img/muestras/bb1.jpg"
+                  class="rounded d-block w-100"
+                  alt="Imagen 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="resources/img/muestras/bb2.jpg"
+                  class="rounded d-block w-100"
+                  alt="Imagen 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="resources/img/muestras/bb3.jpg"
+                  class="rounded d-block w-100"
+                  alt="Imagen 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-12 content-container">
+          <!-- Caja de información de la serie y comentarios dentro de un borde "stripped" -->
+          <div class="stripped col-lg-10">
+            <div class="row">
+              <!-- Información de la Serie -->
+              <div class="col-4">
+                <h4>Información de la Serie</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <strong>Fecha de inicio:</strong> 20 de enero de 2008
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Fecha de finalización:</strong> 29 de septiembre de
+                    2013
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Director:</strong> Vince Gilligan
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Casting:</strong> Bryan Cranston, Aaron Paul, Anna
+                    Gunn
+                  </li>
+                </ul>
+              </div>
+              <div class="col-2">
+
+              </div>
+
+              <!-- Caja de Comentarios -->
+              <div class="col-6">
+                <h4>Comentarios:</h4>
+                <form>
+                <div class="col-lg-6 mb-6">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Comentario</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                  <button type="submit" class="btn btn-primary">
+                    Enviar
+                  </button>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+      <p>
+        <a href="#" class="text-white">Política de privacidad</a> |
+        <a href="#" class="text-white">Términos de uso</a>
+      </p>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
