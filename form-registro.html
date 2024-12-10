@@ -197,33 +197,72 @@
       </div>
     </div>
 
-    <form class="row-cols-lg-4">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-        />
-        <div id="emailHelp" class="form-text">
-          We'll never share your email with anyone else.
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">Registro</h2>
+          <form id="registrationForm" novalidate>
+            <div class="mb-3">
+              <label for="username" class="form-label">Nombre de Usuario</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                required
+                minlength="4"
+                maxlength="20"
+                pattern="^[a-zA-Z0-9_]+$"
+              />
+              <div class="invalid-feedback">
+                El nombre de usuario debe tener entre 4 y 20 caracteres y solo
+                puede contener letras, números y guiones bajos.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required />
+              <div class="invalid-feedback">
+                Por favor, introduce un correo electrónico válido.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                required
+                minlength="8"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+              />
+              <div class="invalid-feedback">
+                La contraseña debe tener al menos 8 caracteres e incluir letras
+                y números.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label"
+                >Confirmar Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                required
+              />
+              <div class="invalid-feedback">Las contraseñas no coinciden.</div>
+            </div>
+
+            <button type="submit" class="btn btn-outline-dark w-100">
+              Registrarse
+            </button>
+          </form>
         </div>
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-        />
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
