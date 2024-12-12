@@ -69,7 +69,11 @@
                 Media
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="lista-peliculas.html">Películas</a></li>
+                <li>
+                  <a class="dropdown-item" href="lista-peliculas.html"
+                    >Películas</a
+                  >
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Series de Televisión</a>
                 </li>
@@ -78,49 +82,6 @@
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#">Sobre nosotros</a>
-            </li>
-
-            <!-- Desplegable idiomas -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="resources/img/flags/es.png"
-                  alt="Español"
-                  width="24"
-                  height="20"
-                />
-                Español
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="resources/img/flags/en.png"
-                      alt="English"
-                      width="24"
-                      height="20"
-                    />
-                    English
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="resources/img/flags/fr.png"
-                      alt="Français"
-                      width="24"
-                      height="20"
-                    />
-                    Français
-                  </a>
-                </li>
-              </ul>
             </li>
 
             <!-- Botón de login -->
@@ -196,170 +157,189 @@
     </div>
 
     <div class="content-wrapper">
-        <div class="container-fluid movie-list-section">
-          <h1 class="text-center section-title">TOP Películas</h1>
-      
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-              <table class="table table-striped rounded">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Poster</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Género</th>
-                    <th scope="col">Año</th>
-                    <th scope="col">Calificación</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/inter_poster.jpg" 
-                        alt="Interestelar" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>Interestelar</td>
-                    <td>Ciencia Ficción</td>
-                    <td>2014</td>
-                    <td>9.2/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/inception_poster.jpg" 
-                        alt="Inception" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>Origen</td>
-                    <td>Ciencia Ficción</td>
-                    <td>2010</td>
-                    <td>9.0/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/the_dark_knight_poster.jpg" 
-                        alt="The Dark Knight" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>El caballero oscuro</td>
-                    <td>Acción</td>
-                    <td>2008</td>
-                    <td>8.9/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/forrest_gump_poster.jpg" 
-                        alt="Forrest Gump" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>Forrest Gump</td>
-                    <td>Drama</td>
-                    <td>1994</td>
-                    <td>8.8/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/shawshank_poster.jpg" 
-                        alt="The Shawshank Redemption" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>Cadena Perpetua</td>
-                    <td>Drama</td>
-                    <td>1994</td>
-                    <td>9.3/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/godfather_poster.jpg" 
-                        alt="The Godfather" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>El Padrino</td>
-                    <td>Crimen, Drama</td>
-                    <td>1972</td>
-                    <td>9.2/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/pulp_fiction_poster.jpg" 
-                        alt="Pulp Fiction" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>Pulp Fiction</td>
-                    <td>Crimen, Drama</td>
-                    <td>1994</td>
-                    <td>8.9/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/gladiator_poster.jpg" 
-                        alt="Gladiator" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>Gladiator</td>
-                    <td>Acción, Drama</td>
-                    <td>2000</td>
-                    <td>8.5/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">9</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/avatar_poster.jpg" 
-                        alt="Avatar" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>Avatar</td>
-                    <td>Ciencia Ficción, Aventura</td>
-                    <td>2009</td>
-                    <td>7.8/10</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>
-                      <img 
-                        src="resources/img/poster/titanic_poster.jpg" 
-                        alt="Titanic" 
-                        class="movie-poster"
-                      />
-                    </td>
-                    <td>Titanic</td>
-                    <td>Drama, Romance</td>
-                    <td>1997</td>
-                    <td>7.8/10</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      <div class="container-fluid movie-list-section">
+        <h1 class="text-center section-title">TOP Películas</h1>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <table class="table table-striped rounded">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Poster</th>
+                  <th scope="col">Título</th>
+                  <th scope="col">Género</th>
+                  <th scope="col">Año</th>
+                  <th scope="col">Calificación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/inter_poster.jpg"
+                      alt="Interestelar"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>Interestelar</td>
+                  <td>Ciencia Ficción</td>
+                  <td>2014</td>
+                  <td>
+                    9.2/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/inception_poster.jpg"
+                      alt="Inception"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>Origen</td>
+                  <td>Ciencia Ficción</td>
+                  <td>2010</td>
+                  <td>
+                    9.0/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/the_dark_knight_poster.jpg"
+                      alt="The Dark Knight"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>El caballero oscuro</td>
+                  <td>Acción</td>
+                  <td>2008</td>
+                  <td>
+                    8.9/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/forrest_gump_poster.jpg"
+                      alt="Forrest Gump"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>Forrest Gump</td>
+                  <td>Drama</td>
+                  <td>1994</td>
+                  <td>
+                    8.8/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/shawshank_poster.jpg"
+                      alt="The Shawshank Redemption"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>Cadena Perpetua</td>
+                  <td>Drama</td>
+                  <td>1994</td>
+                  <td>
+                    9.3/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/godfather_poster.jpg"
+                      alt="The Godfather"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>El Padrino</td>
+                  <td>Crimen, Drama</td>
+                  <td>1972</td>
+                  <td>
+                    9.2/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/pulp_fiction_poster.jpg"
+                      alt="Pulp Fiction"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>Pulp Fiction</td>
+                  <td>Crimen, Drama</td>
+                  <td>1994</td>
+                  <td>
+                    8.9/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/gladiator_poster.jpg"
+                      alt="Gladiator"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>Gladiator</td>
+                  <td>Acción, Drama</td>
+                  <td>2000</td>
+                  <td>
+                    8.5/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/avatar_poster.jpg"
+                      alt="Avatar"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>Avatar</td>
+                  <td>Ciencia Ficción, Aventura</td>
+                  <td>2009</td>
+                  <td>
+                    7.8/10
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>
+                    <img
+                      src="resources/img/poster/titanic_poster.jpg"
+                      alt="Titanic"
+                      class="movie-poster"
+                    />
+                  </td>
+                  <td>Titanic</td>
+                  <td>Drama, Romance</td>
+                  <td>1997</td>
+                  <td>
+                    7.8/10
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-      
+    </div>
 
     <!-- Footer  -->
     <footer class="bg-dark text-white text-center py-4">

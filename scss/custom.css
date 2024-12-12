@@ -19,7 +19,6 @@ body {
 .container-fluid {
   padding-left: 15px;
   padding-right: 15px;
-  overflow-x: hidden;
 }
 
 .content-wrapper {
@@ -55,6 +54,7 @@ footer {
 .navbar {
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: "Impact";
 }
 .navbar .navbar-brand {
   padding-top: 0;
@@ -83,8 +83,6 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.375rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  z-index: auto;
 }
 .navbar .dropdown-item {
   display: flex;
