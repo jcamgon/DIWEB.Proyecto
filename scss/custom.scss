@@ -1,19 +1,21 @@
 //colores
-$color-principal: #b3c8b3;
-$color-secundario: #b3c8be;
-$color-fondo: rgb(200, 200, 179);
+$color-principal: #333;
+$color-secundario: #b3c8b3;
+$color-fondo: #c8c8b3;
+$color-footer: #212529;
 $color-texto: #333;
+$color-texto-secundario: #c8c8b3;
 
 //fuentes
 $fuente-principal: "Arial", sans-serif;
 $fuente-secundaria: "Georgia", serif;
 
-
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
-  overflow-x: hidden; 
-  max-width: 100%; 
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -22,31 +24,31 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100%; 
-  overflow-x: hidden; 
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container-fluid {
   padding-left: 15px;
   padding-right: 15px;
-  overflow-x: hidden; // Prevent overflow in fluid containers
+  overflow-x: hidden;
 }
 
 .content-wrapper {
   flex: 1 0 auto;
-  width: 100%; // Ensure full width
-  overflow-x: hidden; // Additional protection
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .content-wrapper {
-  flex: 1 0 auto; // Allow content to grow and push footer down
+  flex: 1 0 auto;
 }
 
 footer {
-  flex-shrink: 0; // Prevent footer from shrinking
-  margin-top: auto; // Push footer to bottom
+  flex-shrink: 0;
+  margin-top: auto;
   width: 100%;
-  background-color: #212529; // Dark background to match existing footer
+  background-color: $color-footer;
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -61,75 +63,66 @@ footer {
 }
 
 .navbar {
-  padding-top: 10px;  
-  padding-bottom: 10px;  
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   .navbar-brand {
-    padding-top: 0;  
-    padding-bottom: 0;  
-    font-size: 1.5rem;  
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.5rem;
     display: flex;
-    align-items: center; 
+    align-items: center;
   }
 
   .navbar-brand img {
-    width: 40px;  
-    height: 40px;  
-    margin-right: 5px; 
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
   }
 
   .navbar-toggler {
-    padding: 5px; 
+    padding: 5px;
   }
 
   .nav-item {
-    padding: 0;  
+    padding: 0;
   }
 
   .nav-link {
-    padding: 5px 10px;  
-    font-size: 0.9rem;  
+    padding: 5px 10px;
+    font-size: 0.9rem;
   }
 
   .dropdown-menu {
-    padding: 5px 0; 
+    margin-top: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    position: absolute;
+    z-index:auto;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+      width: 24px;
+      height: 20px;
+    }
   }
 
   .form-control {
-    font-size: 0.85rem; 
-    padding: 5px 10px; 
+    font-size: 0.85rem;
+    padding: 5px 10px;
   }
 
   .btn-outline-success {
-    padding: 5px 10px; 
-    font-size: 0.85rem; 
+    padding: 5px 10px;
+    font-size: 0.85rem;
   }
-}
-
-textarea {
-  resize: none;
-}
-
-.form-control:focus {
-  border-color: $color-principal;
-  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
-}
-
-.navbar {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.navbar-brand img {
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
 }
 
 .welcome-section {
@@ -141,8 +134,8 @@ textarea {
     color: $color-texto;
     font-family: $fuente-secundaria;
     font-weight: bold;
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 3.8rem;
+    margin: 0.5rem;
   }
 
   .welcome-subtitle {
@@ -151,13 +144,36 @@ textarea {
   }
 }
 
-.movie-posters {
+.nav-tabs {
+  border-bottom: 2px solid $color-principal;
+
+  .nav-link {
+    color: $color-texto;
+    font-family: $fuente-secundaria;
+    font-weight: bold;
+    margin: 0 10px;
+
+    &.active {
+      color: $color-texto-secundario;
+      background-color: lighten($color-principal, 20%);
+      border-color: $color-principal $color-principal transparent;
+    }
+
+    &:hover {
+      color: $color-texto-secundario;
+      background-color: lighten($color-principal, 25%);
+      border-color: $color-principal $color-principal transparent;
+    }
+  }
+}
+
+.movie-series-section {
   .card {
     height: auto;
     overflow: hidden;
     transform: scale(0.8);
     transition: transform 0.3s ease;
-    width: 100%; 
+    width: 100%;
 
     &:hover {
       transform: scale(0.85);
@@ -165,32 +181,101 @@ textarea {
   }
 
   .card-img-top {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   .card-body {
     text-align: center;
+    background-color: lighten($color-fondo, 15%);
   }
 
   .section-title {
-    font-family: $fuente-secundaria; 
+    font-family: $fuente-secundaria;
     color: $color-texto;
     font-weight: bold;
   }
-  
+
   .section-description {
-    font-size: 1.2rem; // Larger text
+    font-size: 1.2rem;
     color: darken($color-texto, 10%);
     text-align: center;
   }
+  @media (max-width: 768px) {
+    .movie-series-section .card {
+      transform: scale(0.9);
+      margin-bottom: 15px;
 
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+  }
 }
 
-@media (max-width: 768px) {
-  .movie-posters .card {
-    transform: scale(1); // Normal size on smaller screens
-    margin-bottom: 15px;
+.movie-list-section {
+  padding: 2rem 0;
+
+  .section-title {
+    font-family: $fuente-secundaria;
+    color: $color-texto;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .table {
+    background-color: lighten($color-fondo, 10%);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    thead {
+      background-color: $color-principal;
+      color: $color-texto-secundario;
+
+      th {
+        font-family: $fuente-secundaria;
+        font-weight: bold;
+        border-color: lighten($color-principal, 10%);
+      }
+
+      
+    }
+
+    tbody {
+      tr {
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: lighten($color-secundario, 10%) !important;
+        }
+      }
+
+      td {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .movie-poster {
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    td:nth-child(4),
+    th:nth-child(4),
+    td:nth-child(5),
+    th:nth-child(5) {
+      display: none;
+    }
   }
 }

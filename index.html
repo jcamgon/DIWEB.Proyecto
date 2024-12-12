@@ -71,7 +71,7 @@
                 Media
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Películas</a></li>
+                <li><a class="dropdown-item" href="lista-peliculas.html">Películas</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Series de Televisión</a>
                 </li>
@@ -152,7 +152,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+            <h4 class="modal-title" id="loginModalLabel">Iniciar sesión</h4>
             <button
               type="button"
               class="btn-close"
@@ -236,7 +236,7 @@
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Mr. Robot</h5>
+                <h4>Mr. Robot</h4>
                 <p>
                   Un joven programador con trastornos psicológicos se ve
                   reclutado por un misterioso hacker conocido como "Mr. Robot",
@@ -252,7 +252,7 @@
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Arcane</h5>
+                <h4>Arcane</h4>
                 <p>
                   En una ciudad dividida entre la opulencia de los ricos y la
                   pobreza de los barrios bajos, dos hermanas se ven atrapadas en
@@ -268,7 +268,7 @@
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Ozark</h5>
+                <h4>Ozark</h4>
                 <p>
                   Un asesor financiero se ve obligado a trasladar a su familia a
                   los lagos de Ozark tras un fallido lavado de dinero, donde
@@ -305,67 +305,244 @@
           <div class="col-12">
             <h1 class="welcome-title">Bienvenido a CriticMedia</h1>
             <p class="welcome-subtitle">
-              Comenta y valora tus películas y series de televisión favoritas
+              Todo lo que necesitas saber sobre últimos lanzamientos y Películas o Series de Televisión más votadas
             </p>
           </div>
         </div>
       </div>
 
       <!-- Series populares -->
-      <div class="container-fluid mt-5 movie-posters">
-        <h1 class="text-center section-title">Películas y Series Populares</h1>
+      <div class="container-fluid mt-5 movie-series-section">
+        <h1 class="text-center section-title">Películas y Series</h1>
         <p class="section-description">
           Descubre las últimas tendencias en entretenimiento
         </p>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card">
-              <a href="seriebb.html">
-                <img
-                  src="resources/img/poster/bb_poster.jpg"
-                  class="card-img-top"
-                  alt="Breaking Bad Poster"
-                />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Breaking Bad</h5>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card">
-              <img
-                src="resources/img/poster/hotd_poster.jpg"
-                class="card-img-top"
-                alt="La Casa Del Dragón Poster"
-              />
-              <div class="card-body">
-                <h5 class="card-title">La Casa Del Dragón</h5>
+        <!-- pestañas -->
+        <ul
+          class="nav nav-tabs justify-content-center"
+          id="movieSeriesTabs"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="populares-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#populares"
+              type="button"
+              role="tab"
+              aria-controls="populares"
+              aria-selected="true"
+            >
+              Populares
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="proximamente-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#proximamente"
+              type="button"
+              role="tab"
+              aria-controls="proximamente"
+              aria-selected="false"
+            >
+              Próximamente
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="recomendaciones-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#recomendaciones"
+              type="button"
+              role="tab"
+              aria-controls="recomendaciones"
+              aria-selected="false"
+            >
+              Recomendaciones
+            </button>
+          </li>
+        </ul>
+
+        <!-- posters -->
+        <div class="tab-content" id="movieSeriesTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="populares"
+            role="tabpanel"
+            aria-labelledby="populares-tab"
+          >
+            <div class="row mt-4">
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <a href="seriebb.html">
+                    <img
+                      src="resources/img/poster/bb_poster.jpg"
+                      class="card-img-top"
+                      alt="Breaking Bad Poster"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title">Breaking Bad</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/hotd_poster.jpg"
+                    class="card-img-top"
+                    alt="La Casa Del Dragón Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">La Casa Del Dragón</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/aot_poster.jpg"
+                    class="card-img-top"
+                    alt="Ataque a los Titanes Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Ataque a los Titanes</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/inter_poster.jpg"
+                    class="card-img-top"
+                    alt="Interestelar Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Interestelar</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card">
-              <img
-                src="resources/img/poster/aot_poster.jpg"
-                class="card-img-top"
-                alt="Ataque a los Titanes Poster"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Ataque a los Titanes</h5>
+          <div
+            class="tab-pane fade"
+            id="proximamente"
+            role="tabpanel"
+            aria-labelledby="proximamente-tab"
+          >
+            <div class="row mt-4">
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/kraven_poster.jpg"
+                    class="card-img-top"
+                    alt="Dune Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Kraven the Hunter</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/haunting_poster.jpg"
+                    class="card-img-top"
+                    alt="Five Nights at Freddy's Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">La maldición del Queen Mary</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/mufasa_poster.jpg"
+                    class="card-img-top"
+                    alt="Madame Web Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Mufasa: El rey león</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/conclave_poster.jpg"
+                    class="card-img-top"
+                    alt="Inside Out 2 Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Cónclave</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card">
-              <img
-                src="resources/img/poster/inter_poster.jpg"
-                class="card-img-top"
-                alt="Interestelar Poster"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Interestelar</h5>
+          <div
+            class="tab-pane fade"
+            id="recomendaciones"
+            role="tabpanel"
+            aria-labelledby="recomendaciones-tab"
+          >
+            <div class="row mt-4">
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/stranger_things_poster.jpg"
+                    class="card-img-top"
+                    alt="Stranger Things Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Stranger Things</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/dark_poster.jpg"
+                    class="card-img-top"
+                    alt="Dark Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Dark</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/the_witcher_poster.jpg"
+                    class="card-img-top"
+                    alt="The Witcher Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">The Witcher</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                  <img
+                    src="resources/img/poster/black_mirror_poster.jpg"
+                    class="card-img-top"
+                    alt="Black Mirror Poster"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Black Mirror</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
