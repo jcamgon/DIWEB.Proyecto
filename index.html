@@ -401,11 +401,17 @@
 
               <div class="col-md-3 col-sm-6 mb-4">
                 <div class="card">
-                  <img
-                    src="resources/img/poster/hotd_poster.jpg"
-                    class="card-img-top"
-                    alt="La Casa Del Dragón Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/hotd_poster.jpg"
+                      class="card-img-top"
+                      alt="La Casa Del Dragón Poster"
+                    />
+                  </a>
                   <div class="card-body">
                     <h4 class="card-title">La Casa Del Dragón</h4>
                   </div>
@@ -413,11 +419,17 @@
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
                 <div class="card">
-                  <img
-                    src="resources/img/poster/aot_poster.jpg"
-                    class="card-img-top"
-                    alt="Ataque a los Titanes Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/aot_poster.jpg"
+                      class="card-img-top"
+                      alt="Ataque a los Titanes Poster"
+                    />
+                  </a>
                   <div class="card-body">
                     <h4 class="card-title">Ataque a los Titanes</h4>
                   </div>
@@ -425,11 +437,17 @@
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
                 <div class="card">
-                  <img
-                    src="resources/img/poster/inter_poster.jpg"
-                    class="card-img-top"
-                    alt="Interestelar Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/inter_poster.jpg"
+                      class="card-img-top"
+                      alt="Interestelar Poster"
+                    />
+                  </a>
                   <div class="card-body">
                     <h4 class="card-title">Interestelar</h4>
                   </div>
@@ -593,5 +611,13 @@
 
     <!-- Bootstrap Bundle JS -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>
