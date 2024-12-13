@@ -197,72 +197,131 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title text-center mb-4">Registro</h2>
-          <form id="registrationForm" novalidate>
+    <!-- <div class="container">
+      <div class="row registration-container">
+        <div class="col-md-6 registration-image-section">
+          <h2 class="text-center mb-4">¡Únete a nosotros!</h2>
+          <p class="text-center mb-4">Crea una cuenta CriticMedia y forma parte de nuestra comunidad</p>
+          <img src="resources/img/palomitas.png" alt="Palomitas" class="img-fluid">
+        </div>
+        
+        <div class="col-md-6 registration-form-section">
+          <form class="registration-form needs-validation" novalidate>
             <div class="mb-3">
-              <label for="username" class="form-label">Nombre de Usuario</label>
+              <label for="nameId" class="form-label">Nombre de Usuario</label>
+              <input type="text" class="form-control" id="nameId" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" required />
+            </div>
+
+            <div class="mb-3 form-check">
               <input
-                type="text"
-                class="form-control"
-                id="username"
+                class="form-check-input"
+                type="checkbox"
+                id="terms"
                 required
-                minlength="4"
-                maxlength="20"
-                pattern="^[a-zA-Z0-9_]+$"
               />
-              <div class="invalid-feedback">
-                El nombre de usuario debe tener entre 4 y 20 caracteres y solo
-                puede contener letras, números y guiones bajos.
+              <label for="terms" class="form-check-label"
+                >Acepto los términos y condiciones</label
+              >
+            </div>
+
+            <button type="submit" class="btn btn-outline-dark">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="row registration-container">
+        <div class="col-md-6 registration-image-section">
+          <div class="registration-text-wrapper">
+            <h2>¡Únete a nosotros!</h2>
+            <p class="text-center">Crea una cuenta CriticMedia y forma parte de nuestra comunidad</p>
+          </div>
+          <div class="image-container">
+            <img src="resources/img/palomitas.png" alt="Palomitas" class="img-fluid">
+          </div>
+        </div>
+        
+        <div class="col-md-6 registration-form-section">
+          <div class="registration-form-text-wrapper">
+            <h2>Registro</h2>
+          </div>
+          <form class="registration-form needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="nameId" class="form-label">Nombre de Usuario</label>
+              <input type="text" class="form-control" id="nameId" required />
+              <div class="invalid-tooltip">
+                Es necesario poner el nombre de usuario
               </div>
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label">Correo Electrónico</label>
               <input type="email" class="form-control" id="email" required />
-              <div class="invalid-feedback">
-                Por favor, introduce un correo electrónico válido.
+              <div class="invalid-tooltip">
+                Es necesario poner el correo electrónico
               </div>
             </div>
-
+            
             <div class="mb-3">
               <label for="password" class="form-label">Contraseña</label>
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                required
-                minlength="8"
-                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
-              />
-              <div class="invalid-feedback">
-                La contraseña debe tener al menos 8 caracteres e incluir letras
-                y números.
+              <input type="password" class="form-control" id="password" required />
+              <div class="invalid-tooltip">
+                Es necesario poner la contraseña
               </div>
             </div>
 
-            <div class="mb-3">
-              <label for="confirmPassword" class="form-label"
-                >Confirmar Contraseña</label
-              >
+            <div class="mb-3 form-check">
               <input
-                type="password"
-                class="form-control"
-                id="confirmPassword"
+                class="form-check-input"
+                type="checkbox"
+                id="terms"
                 required
               />
-              <div class="invalid-feedback">Las contraseñas no coinciden.</div>
+              <label for="terms" class="form-check-label"
+                >Acepto los términos y condiciones</label
+              >
+              <div class="invalid-tooltip">Es necesario aceptar los términos</div>
             </div>
 
-            <button type="submit" class="btn btn-outline-dark w-100">
-              Registrarse
-            </button>
+            <button type="submit" class="btn btn-outline-dark">Enviar</button>
           </form>
         </div>
       </div>
     </div>
+
+    <script>
+      // Ejemplo obtenido de la documentación de Bootstrap
+      (() => {
+        "use strict";
+
+        const forms = document.querySelectorAll(".needs-validation");
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
