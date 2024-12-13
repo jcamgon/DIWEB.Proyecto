@@ -322,6 +322,7 @@ footer .social-icons a:hover {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #bfbfa7;
 }
 
 .registration-image-section {
