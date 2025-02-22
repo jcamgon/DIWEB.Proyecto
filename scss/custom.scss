@@ -16,9 +16,9 @@ $color-texto-secundario: white;
 }
 
 $fuente-principal: "Arial", sans-serif;
-$fuente-secundaria: "Georgia", serif;
-$fuente-navbar: "future-earth";
-$fuente-welcome: "future-earth";
+$fuente-secundaria: "future-earth";
+$fuente-navbar: $fuente-secundaria;
+$fuente-welcome: $fuente-secundaria;
 
 
 //Clases de utilidad
