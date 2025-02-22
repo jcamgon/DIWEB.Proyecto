@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CriticMedia</title>
-    <link rel="icon" type="image/x-icon" href="resources/img/logo.png" />
+    <link rel="icon" type="image/x-icon" href="resources/img/logo.svg" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     <!-- Navbar -->
@@ -22,9 +26,9 @@
       <div class="container-fluid">
         <a class="navbar-brand align-items-stretch" href="index.html">
           <img
-            src="resources/img/logo.png"
+            src="resources/img/logo.svg"
             alt="Logo"
-            class="d-inline-block align-text-middle"
+            class="d-inline-block align-text-middle logo"
           />
           <b>CriticMedia</b>
         </a>
@@ -204,8 +208,28 @@
     </div>
 
     <div class="content-wrapper">
+      <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+          Aquí añadirás tu video 
+          <source src="./resources/videos/video-fondo.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <div
+          class="content d-flex align-items-center justify-content-center h-100"
+        >
+          <div class="content d-flex align-items-center justify-content-center h-100">
+            <div class="container">
+                <h1 class="display-3 mb-4 animate slideInLeft welcome-title">Bienvenido a CriticMedia</h1>
+                <p class="lead animate slideInLeft welcome-subtitle">Todo lo que necesitas saber sobre últimos lanzamientos y Películas</p>
+            </div>
+        </div>
+        </div>
+      </div>
+      
       <!-- Carousel -->
-      <div class="d-none d-md-block">
+      <!-- <div class="d-none d-md-block">
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
@@ -303,23 +327,12 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </div> -->
 
       <!-- Mensaje de bienvenida -->
-      <div class="container-fluid welcome-section">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="welcome-title">Bienvenido a CriticMedia</h1>
-            <p class="welcome-subtitle">
-              Todo lo que necesitas saber sobre últimos lanzamientos y Películas
-              o Series de Televisión más votadas
-            </p>
-          </div>
-        </div>
-      </div>
 
       <!-- Series populares -->
-      <div class="container-fluid mt-5 movie-series-section">
+      <div class="container-fluid mt-5 movie-series-section animate-on-scroll animate__slow" data-animation="fadeInUp">
         <h1 class="text-center section-title">Películas y Series</h1>
         <p class="section-description">
           Descubre las últimas tendencias en entretenimiento
@@ -385,7 +398,7 @@
           >
             <div class="row mt-4">
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-0-5s" data-animation="flipInY">
                   <a href="seriebb.html">
                     <img
                       src="resources/img/poster/bb_poster.jpg"
@@ -400,7 +413,7 @@
               </div>
 
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-1s" data-animation="flipInY">
                   <a
                     href="#"
                     data-bs-toggle="tooltip"
@@ -418,7 +431,7 @@
                 </div>
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-1-5s" data-animation="flipInY">
                   <a
                     href="#"
                     data-bs-toggle="tooltip"
@@ -436,7 +449,7 @@
                 </div>
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-2s" data-animation="flipInY">
                   <a
                     href="#"
                     data-bs-toggle="tooltip"
@@ -463,7 +476,7 @@
           >
             <div class="row mt-4">
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-0-5s" data-animation="flipInY">
                   <img
                     src="resources/img/poster/kraven_poster.jpg"
                     class="card-img-top"
@@ -476,7 +489,7 @@
               </div>
 
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-1s" data-animation="flipInY">
                   <img
                     src="resources/img/poster/haunting_poster.jpg"
                     class="card-img-top"
@@ -488,7 +501,7 @@
                 </div>
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-1-5s" data-animation="flipInY">
                   <img
                     src="resources/img/poster/mufasa_poster.jpg"
                     class="card-img-top"
@@ -500,7 +513,7 @@
                 </div>
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-2s" data-animation="flipInY">
                   <img
                     src="resources/img/poster/conclave_poster.jpg"
                     class="card-img-top"
@@ -521,7 +534,7 @@
           >
             <div class="row mt-4">
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-0-5s" data-animation="flipInY">
                   <img
                     src="resources/img/poster/stranger_things_poster.jpg"
                     class="card-img-top"
@@ -534,7 +547,7 @@
               </div>
 
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-1s" data-animation="flipInY">
                   <img
                     src="resources/img/poster/dark_poster.jpg"
                     class="card-img-top"
@@ -546,7 +559,7 @@
                 </div>
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-1-5s" data-animation="flipInY">
                   <img
                     src="resources/img/poster/the_witcher_poster.jpg"
                     class="card-img-top"
@@ -558,7 +571,7 @@
                 </div>
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animate-on-scroll animate__delay-2s" data-animation="flipInY">
                   <img
                     src="resources/img/poster/black_mirror_poster.jpg"
                     class="card-img-top"
@@ -619,5 +632,33 @@
         (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
       );
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  // If element is in view
+                  if (entry.isIntersecting) {
+                      const element = entry.target;
+                      const animation = element.dataset.animation;
+                      
+                      // Add the animation classes
+                      element.classList.add('animated', `animate__animated`, `animate__${animation}`);
+                      
+                      // Optional: Remove observer after animation
+                      observer.unobserve(element);
+                  }
+              });
+          }, {
+              threshold: 0.1 // Trigger when at least 10% of the element is visible
+          });
+
+          // Observe all elements with the animate-on-scroll class
+          animatedElements.forEach(element => {
+              observer.observe(element);
+          });
+      });
+  </script>
   </body>
 </html>

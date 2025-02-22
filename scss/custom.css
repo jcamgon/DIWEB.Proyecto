@@ -1,3 +1,47 @@
+@import url("../node_modules/animate.css/animate.css");
+/* $color-fondo: #c8c8b3; */
+@font-face {
+  font-family: "future-earth";
+  src: url(../resources/fonts/future-earth.ttf) format(truetype);
+}
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate--delay-1s {
+  animation-delay: 1s;
+}
+
+.animate__animated.animate__delay-0-5s {
+  animation-delay: 0.5s;
+  animation-delay: calc(var(--animate-delay) * 0.5);
+}
+
+.animate__animated.animate__delay-1-5s {
+  animation-delay: 1.5s;
+  animation-delay: calc(var(--animate-delay) * 1.5);
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slideInLeft {
+  animation-name: slideInLeft;
+  animation-timing-function: ease-in;
+}
+
+.appear {
+  animation: zoomIn linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
 html,
 body {
   height: 100%;
@@ -7,7 +51,7 @@ body {
 }
 
 body {
-  background-color: #c8c8b3;
+  background-color: white;
   font-family: "Arial", sans-serif;
   display: flex;
   flex-direction: column;
@@ -79,19 +123,20 @@ footer .social-icons a:hover {
 .navbar {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: "Impact";
+  font-family: "future-earth";
 }
 .navbar .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
   font-size: 1.5rem;
   display: flex;
-  align-items: center;
+  align-items: center; /* Ensures vertical alignment */
+  gap: 10px; /* Adds spacing between image and text */
 }
 .navbar .navbar-brand img {
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
+  height: 100%; /* Matches text height */
+  max-height: 2rem; /* Ensures the image doesn't exceed text size */
+  width: auto; /* Maintains aspect ratio */
 }
 .navbar .navbar-toggler {
   padding: 5px;
@@ -127,21 +172,23 @@ footer .social-icons a:hover {
   font-size: 0.85rem;
 }
 
-.welcome-section {
-  padding: 2rem 0;
-  text-align: center;
-  margin-top: 2rem;
+.navbar input {
+  font-family: "Arial", sans-serif;
 }
-.welcome-section .welcome-title {
-  color: #333;
-  font-family: "Georgia", serif;
+
+.welcome-title {
+  color: white;
+  font-family: "future-earth";
   font-weight: bold;
-  font-size: 3.8rem;
+  font-size: 5rem;
   margin: 0.5rem;
 }
-.welcome-section .welcome-subtitle {
-  color: #1a1a1a;
-  font-size: 1.2rem;
+
+.welcome-subtitle {
+  color: #e6e6e6;
+  font-family: "future-earth";
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .nav-tabs {
@@ -154,18 +201,20 @@ footer .social-icons a:hover {
   margin: 0 10px;
 }
 .nav-tabs .nav-link.active {
-  color: #c8c8b3;
+  color: white;
   background-color: #666666;
   border-color: #333 #333 transparent;
 }
 .nav-tabs .nav-link:hover {
-  color: #c8c8b3;
+  color: white;
   background-color: #737373;
   border-color: #333 #333 transparent;
 }
 
 .movie-series-section .card {
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow: hidden;
   transform: scale(0.8);
   transition: transform 0.3s ease;
@@ -181,8 +230,16 @@ footer .social-icons a:hover {
      object-fit: cover;
 }
 .movie-series-section .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
-  background-color: #e8e8df;
+  background-color: #333;
+  min-height: 50px;
+}
+.movie-series-section .card-title {
+  color: white;
 }
 .movie-series-section .section-title {
   font-family: "Georgia", serif;
@@ -214,14 +271,14 @@ footer .social-icons a:hover {
   margin-bottom: 2rem;
 }
 .movie-list-section .table {
-  background-color: #ddddd1;
+  background-color: white;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 .movie-list-section .table thead {
   background-color: #333;
-  color: #c8c8b3;
+  color: white;
 }
 .movie-list-section .table thead th {
   font-family: "Georgia", serif;
@@ -264,7 +321,7 @@ footer .social-icons a:hover {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #bfbfa7;
+  background-color: whitesmoke;
 }
 
 .registration-image-section {
@@ -368,7 +425,8 @@ footer .social-icons a:hover {
     margin-top: 0;
   }
 }
-.serie-wrapper h2, h4 {
+.serie-wrapper h2,
+h4 {
   font-family: "Georgia", serif;
   font-weight: 700;
   font-size: 1.2rem;
@@ -401,4 +459,66 @@ footer .social-icons a:hover {
 }
 .content-container .lower-section form .btn-outline-dark {
   margin-top: auto;
+}
+.video-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #bg-video {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #bg-video {
+    width: 100vw;
+    height: 100%;
+  }
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.modal-title {
+  font-family: "future-earth";
+}
+
+.modal-body form {
+  font-family: "future-earth";
+}
+
+.modal-body input {
+  font-family: "Arial", sans-serif;
 }/*# sourceMappingURL=custom.css.map */

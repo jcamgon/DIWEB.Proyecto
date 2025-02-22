@@ -1,15 +1,71 @@
+@import url("../node_modules/animate.css/animate.css");
+
 //colores
 $color-principal: #333;
 $color-secundario: #b3c8b3;
-$color-fondo: #c8c8b3;
+/* $color-fondo: #c8c8b3; */
+$color-fondo: white;
 $color-footer: #212529;
 $color-texto: #333;
-$color-texto-secundario: #c8c8b3;
+$color-texto-secundario: white;
 
 //fuentes
+@font-face {
+  font-family: "future-earth";
+  src: url(../resources/fonts/future-earth.ttf) format(truetype);
+}
+
 $fuente-principal: "Arial", sans-serif;
 $fuente-secundaria: "Georgia", serif;
-$fuente-navbar: "Impact";
+$fuente-navbar: "future-earth";
+$fuente-welcome: "future-earth";
+
+
+//Clases de utilidad
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate--delay-1s {
+  animation-delay: 1s;
+}
+
+.animate__animated.animate__delay-0-5s {
+  -webkit-animation-delay: calc(1s * 0.5);
+  animation-delay: calc(1s * 0.5);
+  -webkit-animation-delay: calc(var(--animate-delay) * 0.5);
+  animation-delay: calc(var(--animate-delay) * 0.5);
+}
+
+.animate__animated.animate__delay-1-5s {
+  -webkit-animation-delay: calc(1s * 1.5);
+  animation-delay: calc(1s * 1.5);
+  -webkit-animation-delay: calc(var(--animate-delay) * 1.5);
+  animation-delay: calc(var(--animate-delay) * 1.5);
+}
+
+//animaciones
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+  animation-timing-function: ease-in;
+}
+
+.appear {
+  animation: zoomIn linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
 
 html,
 body {
@@ -104,13 +160,14 @@ footer {
     padding-bottom: 0;
     font-size: 1.5rem;
     display: flex;
-    align-items: center;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 10px; /* Adds spacing between image and text */
   }
-
+  
   .navbar-brand img {
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
+    height: 100%; /* Matches text height */
+    max-height: 2rem; /* Ensures the image doesn't exceed text size */
+    width: auto; /* Maintains aspect ratio */
   }
 
   .navbar-toggler {
@@ -155,23 +212,24 @@ footer {
   }
 }
 
-.welcome-section {
-  padding: 2rem 0;
-  text-align: center;
-  margin-top: 2rem;
+.navbar input{
+  font-family: $fuente-principal;
+}
 
-  .welcome-title {
-    color: $color-texto;
-    font-family: $fuente-secundaria;
-    font-weight: bold;
-    font-size: 3.8rem;
-    margin: 0.5rem;
-  }
 
-  .welcome-subtitle {
-    color: darken($color-texto, 10%);
-    font-size: 1.2rem;
-  }
+.welcome-title {
+  color: $color-texto-secundario;
+  font-family: $fuente-welcome;
+  font-weight: bold;
+  font-size: 5rem;
+  margin: 0.5rem;
+}
+
+.welcome-subtitle {
+  color: darken($color-texto-secundario, 10%);
+  font-family: $fuente-welcome;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .nav-tabs {
@@ -199,7 +257,9 @@ footer {
 
 .movie-series-section {
   .card {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%; // Ensures all cards stretch to the same height
     overflow: hidden;
     transform: scale(0.8);
     transition: transform 0.3s ease;
@@ -212,13 +272,22 @@ footer {
 
   .card-img-top {
     width: 100%;
-    height: auto;
+    height: auto; // Fixed height to keep images uniform
     object-fit: cover;
   }
 
   .card-body {
+    flex-grow: 1; // Ensures content fills available space
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Pushes text to bottom if needed
     text-align: center;
-    background-color: lighten($color-fondo, 15%);
+    background-color: $color-principal;
+    min-height: 50px; // Adjust as needed to ensure equal height
+  }
+
+  .card-title {
+    color: $color-texto-secundario;
   }
 
   .section-title {
@@ -232,6 +301,7 @@ footer {
     color: darken($color-texto, 10%);
     text-align: center;
   }
+
   @media (max-width: 768px) {
     .movie-series-section .card {
       transform: scale(0.9);
@@ -243,6 +313,7 @@ footer {
     }
   }
 }
+
 
 .movie-list-section {
   padding: 2rem 0;
@@ -394,9 +465,8 @@ footer {
 .registration-form {
   width: 100%;
   max-width: 400px;
-  margin-top: 100px; 
+  margin-top: 100px;
 }
-
 
 @media (max-width: 768px) {
   .registration-container {
@@ -420,7 +490,8 @@ footer {
   }
 }
 
-.serie-wrapper h2,h4{
+.serie-wrapper h2,
+h4 {
   font-family: $fuente-secundaria;
   font-weight: 700;
   font-size: 1.2rem;
@@ -451,10 +522,8 @@ footer {
       height: 100%;
 
       #exampleFormControlTextarea1 {
-        height: calc(
-          4 * 1.5rem + 2 * 0.75rem + 2px
-        ); 
-        resize: none; 
+        height: calc(4 * 1.5rem + 2 * 0.75rem + 2px);
+        resize: none;
       }
 
       .btn-outline-dark {
@@ -464,9 +533,68 @@ footer {
   }
 
   @media (max-width: 768px) {
-   
   }
 }
 
+.video-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
 
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
 
+@media (min-aspect-ratio: 16/9) {
+  #bg-video {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #bg-video {
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.modal-title {
+  font-family: $fuente-navbar;
+}
+
+.modal-body form{
+  font-family: $fuente-navbar;
+}
+
+.modal-body input{
+  font-family: $fuente-principal;
+}
