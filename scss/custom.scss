@@ -614,3 +614,8 @@ h4 {
 .modal-body input{
   font-family: $fuente-principal;
 }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

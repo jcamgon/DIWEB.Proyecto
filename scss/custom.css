@@ -532,4 +532,9 @@ h4 {
 
 .modal-body input {
   font-family: "Arial", sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
 }/*# sourceMappingURL=custom.css.map */

@@ -597,34 +597,42 @@
     <!-- Carga animaciones al hacer scroll -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const animatedElements =
-          document.querySelectorAll(".animate-on-scroll");
-
+        const animatedElements = document.querySelectorAll(".animate-on-scroll");
+    
+        // Inicialmente, aseguramos que los elementos estén ocultos
+        animatedElements.forEach((element) => {
+          element.classList.add("hidden");
+        });
+    
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-
               if (entry.isIntersecting) {
                 const element = entry.target;
                 const animation = element.dataset.animation;
-
-                element.classList.add(
-                  "animated",
-                  `animate__animated`,
-                  `animate__${animation}`
-                );
-
-                
+    
+                // Mostrar el elemento antes de la animación
+                element.classList.remove("hidden");
+    
+                // Asegurar que la animación se aplique correctamente
+                requestAnimationFrame(() => {
+                  element.classList.add(
+                    "animated",
+                    "animate__animated",
+                    `animate__${animation}`
+                  );
+                });
+    
+                // Dejar de observar después de la animación
                 observer.unobserve(element);
               }
             });
           },
           {
-            threshold: 0.1, 
+            threshold: 0.1, // Se activa cuando el 10% del elemento es visible
           }
         );
-
-        
+    
         animatedElements.forEach((element) => {
           observer.observe(element);
         });
