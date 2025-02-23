@@ -1,5 +1,6 @@
 export const translations = {
   es: {
+    //titulo
     "title": "Bienvenido a CriticMedia",
     "subtitle": "Todo lo que necesitas saber sobre últimos lanzamientos y películas",
 
@@ -15,11 +16,52 @@ export const translations = {
     // Login
     "login-user": "Usuario",
     "login-pass": "Contraseña",
-    "login-signin": "Registrarse",
+    "login-signup": "Registrarse",
     "login-search-placeholder-u": "Introduce tu usuario",
-    "login-search-placeholder-p": "Introduce tu contraseña"
+    "login-search-placeholder-p": "Introduce tu contraseña",
+
+    //pestañas
+    "movies-show-title": "Películas y Series",
+    "movies-show-desc": "Descubre las últimas tendencias en entretenimiento",
+    "tab-text-1": "Populares",
+    "tab-text-2": "Próximamente",
+    "tab-text-3": "Recomendaciones",
+
+    "card-title-pop-1": "Breaking Bad",
+    "card-title-pop-2": "La Casa Del Dragon",
+    "card-title-pop-3": "Ataque a los Titanes",
+    "card-title-pop-4": "Intelestelar",
+
+    "card-title-prox-1": "Kraven el Cazador",
+    "card-title-prox-2": "La Maldicion del Queen Mary",
+    "card-title-prox-3": "Mufasa: El Rey León",
+    "card-title-prox-4": "Cónclave",
+    
+    "card-title-rec-1": "Stranger Things",
+    "card-title-rec-2": "Dark",
+    "card-title-rec-3": "The Whitcher",
+    "card-title-rec-4": "Black Mirror",
+
+    //watchlist
+    "wl-title": "Tu Lista de Seguimiento",
+    "wl-desc": "Guarda las películas y series que quieres ver. Crea tu lista personalizada y mantén un registro de todo el contenido que te interesa.",
+
+    //celebridades
+    "cel-title": "Celebridades Populares",
+    "see-all": "Ver todas",
+    "actor": "Actor",
+    "actress": "Actriz",
+
+    //footer
+    "socials": "Redes Sociales",
+    "privacy": "Política de privacidad",
+    "use": "Términos de uso",
+    "copyright": "2024 CriticMedia. Todos los derechos reservados." 
+    
+
   },
   en: {
+    //titulo
     "title": "Welcome to CriticMedia",
     "subtitle": "Everything you need to know about latest releases and movies",
 
@@ -35,9 +77,47 @@ export const translations = {
     // Login
     "login-user": "Username",
     "login-pass": "Password",
-    "login-signin": "Sign In",
+    "login-signup": "Sign Up",
     "login-search-placeholder-u": "Type your username",
-    "login-search-placeholder-p": "Type your password"
+    "login-search-placeholder-p": "Type your password",
+
+    //pestañas
+    "movies-show-title": "Movies and TV Shows",
+    "movies-show-desc": "Discover the latest trends in entertainment",
+    "tab-text-1": "Popular",
+    "tab-text-2": "Coming Soon",
+    "tab-text-3": "Recommendations",
+
+    "card-title-pop-1": "Breaking Bad",
+    "card-title-pop-2": "House of the Dragon",
+    "card-title-pop-3": "Attack on Titan",
+    "card-title-pop-4": "Interstellar",
+
+    "card-title-prox-1": "Kraven the hunter",
+    "card-title-prox-2": "Haunting of the Queen Mary",
+    "card-title-prox-3": "Mufasa: The Lion King",
+    "card-title-prox-4": "Conclave",
+    
+    "card-title-rec-1": "Stranger Things",
+    "card-title-rec-2": "Dark",
+    "card-title-rec-3": "The Whitcher",
+    "card-title-rec-4": "Black Mirror",
+
+    //watchlist
+    "wl-title": "Your Watchlist",
+    "wl-desc": "Save the movies and tv shows you want to watch. Create your personalized list and keep track of all the content you're interested in",
+
+    //celebridades
+    "cel-title": "Popular Celebrities",
+    "see-all": "See All",
+    "actor": "Actor",
+    "actress": "Actress",
+
+    //footer
+    "socials": "Social Media",
+    "privacy": "Privacy Policy",
+    "use": "Terms of Use",
+    "copyright": "2024 CriticMedia. All right reserved." 
   },
 };
 

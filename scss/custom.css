@@ -210,13 +210,13 @@ footer .social-icons a:hover {
 }
 .nav-tabs .nav-link.active {
   color: white;
-  background-color: #666666;
-  border-color: #333 #333 transparent;
+  background-color: #4e5862;
+  border-color: #212529 #212529 transparent;
 }
 .nav-tabs .nav-link:hover {
   color: white;
-  background-color: #737373;
-  border-color: #333 #333 transparent;
+  background-color: #5a6570;
+  border-color: #212529 #212529 transparent;
 }
 
 .movie-series-section {
@@ -246,7 +246,7 @@ footer .social-icons a:hover {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  background-color: #333;
+  background-color: #212529;
   min-height: 50px;
 }
 .movie-series-section .card-title {
@@ -537,4 +537,79 @@ h4 {
 .hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+.bookmark-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+.watchlist {
+  margin-bottom: 5%;
+  width: 85%;
+  display: grid;
+  place-content: center;
+}
+
+.watchlist h4 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.watchlist i {
+  justify-content: center;
+}
+
+.watchlist p {
+  color: white;
+  text-align: justify;
+  font-family: "Arial", sans-serif;
+  font-size: 1.4em;
+}
+
+.watchlist-botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hover-animado {
+  transition: transform 0.3s ease;
+}
+
+.celeb-title h3 {
+  font-family: "future-earth";
+}
+
+.celeb-title a {
+  color: #333;
+}
+
+.celeb-container h6 {
+  font-family: "future-earth";
+  font-size: 0.97em;
+}
+
+.celeb-container p {
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hover-animado {
+  transition: transform 0.3s ease;
+}
+
+.hover-animado:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=custom.css.map */

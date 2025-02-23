@@ -256,14 +256,14 @@ footer {
 
     &.active {
       color: $color-texto-secundario;
-      background-color: lighten($color-principal, 20%);
-      border-color: $color-principal $color-principal transparent;
+      background-color: lighten($color-footer, 20%);
+      border-color: $color-footer $color-footer transparent;
     }
 
     &:hover {
       color: $color-texto-secundario;
-      background-color: lighten($color-principal, 25%);
-      border-color: $color-principal $color-principal transparent;
+      background-color: lighten($color-footer, 25%);
+      border-color: $color-footer $color-footer transparent;
     }
   }
 }
@@ -298,7 +298,7 @@ footer {
     flex-direction: column;
     justify-content: space-between; 
     text-align: center;
-    background-color: $color-principal;
+    background-color: $color-footer;
     min-height: 50px; 
   }
 
@@ -618,4 +618,80 @@ h4 {
 .hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+.bookmark-icon{
+  font-size: 3rem;
+  color: $color-texto-secundario;
+}
+
+.watchlist {
+  margin-bottom: 5%;
+  width: 85%;
+  display: grid;
+  place-content: center;
+
+}
+
+.watchlist h4 {
+  color: $color-texto-secundario;
+  text-align: center;
+  font-size: 2em;
+}
+
+.watchlist i {
+  justify-content: center;
+}
+
+.watchlist p{
+  color: $color-texto-secundario;
+  text-align: justify;
+  font-family: $fuente-principal;
+  font-size: 1.4em;
+}
+
+.watchlist-botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hover-animado {
+  transition: transform 0.3s ease;
+}
+
+.celeb-title h3{
+  font-family: $fuente-secundaria;
+}
+
+.celeb-title a{
+  color: $color-texto;
+}
+
+.celeb-container h6{
+  font-family: $fuente-secundaria;
+  font-size: 0.97em;
+}
+
+.celeb-container p {
+  font-family: $fuente-principal;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;             
+}
+
+.hover-animado {
+  transition: transform 0.3s ease;
+}
+
+.hover-animado:hover {
+  transform: scale(1.05);
 }
