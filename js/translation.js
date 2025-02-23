@@ -62,7 +62,7 @@ export const translations = {
     "contact": "Contacto",
     "contact-phone": "Teléfono: 959 000 000",
     "contact-phone-2": "Teléfono Secundario: 699 000 000",
-    "contact-email": "Correo Electrónico: support@criticmedia.com",
+    "contact-email": "Correo: support@criticmedia.com",
 
     //footer
     socials: "Redes Sociales",
@@ -130,8 +130,8 @@ export const translations = {
     "about-text-2":"Since 2024, our team of critics has been committed to providing unique perspectives and in-depth analysis that goes beyond the surface. We pride ourselves on delivering objective reviews that will help you discover content that is truly worth watching.",
     "about-text-3": "At CriticMedia, we believe that every film and TV show has a story to tell, not just on screen but behind the scenes as well. Our reviews explore technical, narrative, and artistic elements, giving you a comprehensive overview of each work.",
     "contact": "Contact",
-    "contact-phone": "Phone Number: 959 000 000",
-    "contact-phone-2": "Secundary Phone Number: 699 000 000",
+    "contact-phone": "Phone: 959 000 000",
+    "contact-phone-2": "Secundary Phone: 699 000 000",
     "contact-email": "Email: support@criticmedia.com",
 
     //footer

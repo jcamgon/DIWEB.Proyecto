@@ -715,7 +715,36 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
-      <div class="container-fluid">
+      <div class="text-center mt-3">
+        <button
+          type="button"
+          class="btn btn-outline-light"
+          data-translate="contact"
+          id="contactoBtn"
+          data-bs-toggle="popover"
+          data-bs-placement="top"
+          data-bs-trigger="focus"
+          data-html="true"
+          data-bs-content='
+
+        <div class="d-flex align-items-center gap-2 flex-wrap text-center">
+          <i class="bi bi-telephone text-dark mb-2 fs-6 fs-md-5 fs-lg-4"></i>
+          <p class="mb-2 fs-6 fs-md-5 fs-lg-4">959 000 000</p>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap text-center">
+          <i class="bi bi-telephone text-dark mb-2 fs-6 fs-md-5 fs-lg-4"></i>
+          <p class="mb-2 fs-6 fs-md-5 fs-lg-4" >699 000 000</p>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap text-center">
+          <i class="bi bi-envelope-at text-dark mb-2 fs-6 fs-md-5 fs-lg-4"></i>
+          <p class="mb-2 fs-6 fs-md-5 fs-lg-4" ">support@criticmedia.com</p>
+
+          '
+        >
+          Contacto
+        </button>
+      </div>
+      <div class="container-fluid py-2 mt-2">
         <div class="text-center social-icons">
           <h5 data-translate="socials" class="card-title">Redes Sociales</h5>
           <a
@@ -738,21 +767,40 @@
         <div class="row align-items-center">
           <div class="text-center">
             <div>
-              <div class="d-flex align-items-center justify-content-center gap-2">
-              <a data-translate="privacy" href="#" class="text-white me-3">Política de privacidad</a>
-              <a data-translate="use" href="#" class="text-white">Términos de uso</a><br>
-            </div>
-              <div class="d-flex align-items-center justify-content-center gap-2">
+              <div
+                class="d-flex align-items-center justify-content-center gap-2"
+              >
+                <a data-translate="privacy" href="#" class="text-white me-3"
+                  >Política de privacidad</a
+                >
+                <a data-translate="use" href="#" class="text-white"
+                  >Términos de uso</a
+                ><br />
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center gap-2"
+              >
                 <i class="bi bi-c-circle text-light h6"></i>
                 <p class="mb-2" data-translate="copyright">
                   2024 CriticMedia. Todos los derechos reservados.
                 </p>
-              </div>               
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Script para inicializar Popover footer -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var contactoBtn = document.getElementById("contactoBtn");
+        new bootstrap.Popover(contactoBtn, {
+          html: true,
+          placement: window.innerWidth >= 992 ? "right" : "bottom", // Cambia dirección según el tamaño de la pantalla
+        });
+      });
+    </script>
 
     <!-- Animación en hover para fotos de famosos -->
     <script>
