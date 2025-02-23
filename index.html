@@ -56,8 +56,9 @@
               <form class="d-flex" role="search">
                 <input
                   class="form-control me-2"
-                  type="search"
-                  placeholder="Buscador"
+                  data-translate="search-placeholder"
+                  type="text"
+                  placeholder="Busca en CriticMedia"
                   aria-label="Search"
                 />
                 <button type="button" class="btn btn-outline-light">
@@ -67,7 +68,7 @@
             </li>
 
             <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link active" data-translate="home" aria-current="page" href="index.html"
                 >Inicio</a
               >
             </li>
@@ -84,21 +85,21 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="lista-peliculas.html"
+                  <a class="dropdown-item" data-translate="media-item-1" href="lista-peliculas.html"
                     >Películas</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Series de Televisión</a>
+                  <a class="dropdown-item" data-translate="media-item-2" href="#">Series de Televisión</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Anime</a></li>
+                <li><a class="dropdown-item" data-translate="media-item-3" href="#">Anime</a></li>
               </ul>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Sobre nosotros</a>
+              <a class="nav-link active" data-translate="about" href="aboutus.html">Sobre nosotros</a>
             </li>
             <!-- Desplegable idiomas -->
-            <li class="nav-item dropdown ">
+            <li class="nav-item dropdown show">
               <a
                 class="nav-link dropdown-toggle language-btn"
                 href="#"
@@ -153,11 +154,12 @@
             <li class="me-3">
               <button
                 class="btn btn-outline-light"
+                data-translate="login"
                 type="button"
                 data-bs-toggle="modal"
                 data-bs-target="#loginModal"
               >
-                Login
+                Iniciar Sesión
               </button>
             </li>
           </ul>
@@ -176,7 +178,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="loginModalLabel">Iniciar sesión</h4>
+            <h4 class="modal-title" data-translate="login" id="loginModalLabel">Iniciar sesión</h4>
             <button
               type="button"
               class="btn-close"
@@ -187,30 +189,33 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="username" class="form-label">Usuario</label>
+                <label for="username" data-translate="login-user" class="form-label">Usuario</label>
                 <input
                   type="text"
                   class="form-control"
+                  data-translate="login-search-placeholder-u"
                   id="username"
                   placeholder="Introduce tu usuario"
                 />
               </div>
               <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
+                <label for="password" data-translate="login-pass" class="form-label">Contraseña</label>
                 <input
                   type="password"
                   class="form-control"
+                  data-translate="login-search-placeholder-p"
                   id="password"
                   placeholder="Introduce tu contraseña"
                 />
               </div>
 
-              <button type="button" class="btn btn-outline-dark">
+              <button type="button" data-translate="login" class="btn btn-outline-dark">
                 Iniciar Sesión
               </button>
 
               <a
                 class="btn btn-outline-dark"
+                data-translate="login-signin"
                 href="form-registro.html"
                 role="button"
                 >Regístrarse</a
@@ -224,7 +229,6 @@
     <div class="content-wrapper">
       <div class="video-container">
         <video autoplay muted loop id="bg-video">
-          Aquí añadirás tu video
           <source src="./resources/videos/video-fondo.mp4" type="video/mp4" />
         </video>
 
@@ -235,12 +239,13 @@
         >
           <div class="container-fluid">
             <h1
-              class="text-center mb-4 animate__animated animate__fadeInLeft animate__slow welcome-title"
+              class="welcome-title animate__animated animate__fadeInLeft animate__slow"
             data-translate="title">
               Bienvenido a CriticMedia
             </h1>
             <p
               class="text-center animate__animated animate__fadeInDown animate__slow animate__delay-2s welcome-subtitle"
+              data-translate="subtitle"
             >
               Todo lo que necesitas saber sobre últimos lanzamientos y Películas
             </p>
@@ -319,7 +324,7 @@
             <div class="row mt-4">
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-0-5s"
+                  class="card animate-on-scroll animate__delay-0-5s animate__fast"
                   data-animation="flipInY"
                 >
                   <a href="seriebb.html">
@@ -337,7 +342,7 @@
 
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-1s"
+                  class="card animate-on-scroll animate__delay-1s animate__fast"
                   data-animation="flipInY"
                 >
                   <a
@@ -358,7 +363,7 @@
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-1-5s"
+                  class="card animate-on-scroll animate__delay-1-5s animate__fast"
                   data-animation="flipInY"
                 >
                   <a
@@ -379,7 +384,7 @@
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-2s"
+                  class="card animate-on-scroll animate__delay-2s animate__fast"
                   data-animation="flipInY"
                 >
                   <a
@@ -409,7 +414,7 @@
             <div class="row mt-4">
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-0-5s"
+                  class="card animate-on-scroll animate__delay-0-5s animate__fast"
                   data-animation="flipInY"
                 >
                   <img
@@ -425,7 +430,7 @@
 
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-1s"
+                  class="card animate-on-scroll animate__delay-1s animate__fast"
                   data-animation="flipInY"
                 >
                   <img
@@ -440,7 +445,7 @@
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-1-5s"
+                  class="card animate-on-scroll animate__delay-1-5s animate__fast"
                   data-animation="flipInY"
                 >
                   <img
@@ -455,7 +460,7 @@
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-2s"
+                  class="card animate-on-scroll animate__delay-2s animate__fast"
                   data-animation="flipInY"
                 >
                   <img
@@ -479,7 +484,7 @@
             <div class="row mt-4">
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-0-5s"
+                  class="card animate-on-scroll animate__delay-0-5s animate__fast"
                   data-animation="flipInY"
                 >
                   <img
@@ -495,7 +500,7 @@
 
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-1s"
+                  class="card animate-on-scroll animate__delay-1s animate__fast"
                   data-animation="flipInY"
                 >
                   <img
@@ -510,7 +515,7 @@
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-1-5s"
+                  class="card animate-on-scroll animate__delay-1-5s animate__fast"
                   data-animation="flipInY"
                 >
                   <img
@@ -525,7 +530,7 @@
               </div>
               <div class="col-md-3 col-sm-6 mb-4">
                 <div
-                  class="card animate-on-scroll animate__delay-2s"
+                  class="card animate-on-scroll animate__delay-2s animate__fast"
                   data-animation="flipInY"
                 >
                   <img
@@ -589,24 +594,7 @@
       );
     </script>
 
-    <script>
-      // Toggle del dropdown de idioma
-      const languageBtn = document.getElementById("languageBtn");
-      const languageDropdown = document.getElementById("languageDropdown");
-
-      languageBtn.addEventListener("click", () => {
-        languageDropdown.classList.toggle("show");
-      });
-
-      // Cerrar el dropdown cuando se hace click fuera
-      document.addEventListener("click", (e) => {
-        if (!languageBtn.contains(e.target)) {
-          languageDropdown.classList.remove("show");
-        }
-      });
-    </script>
-
-    <!-- carga animaciones al hacer scroll -->
+    <!-- Carga animaciones al hacer scroll -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const animatedElements =
@@ -615,29 +603,28 @@
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              // If element is in view
+
               if (entry.isIntersecting) {
                 const element = entry.target;
                 const animation = element.dataset.animation;
 
-                // Add the animation classes
                 element.classList.add(
                   "animated",
                   `animate__animated`,
                   `animate__${animation}`
                 );
 
-                // Optional: Remove observer after animation
+                
                 observer.unobserve(element);
               }
             });
           },
           {
-            threshold: 0.1, // Trigger when at least 10% of the element is visible
+            threshold: 0.1, 
           }
         );
 
-        // Observe all elements with the animate-on-scroll class
+        
         animatedElements.forEach((element) => {
           observer.observe(element);
         });
