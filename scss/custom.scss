@@ -711,3 +711,11 @@ h4 {
 .copytext{
   text-align: center;
 }
+
+
+@media (max-width: 768px) {
+  .contact-card {
+    width: 95%;
+  }
+}
+
