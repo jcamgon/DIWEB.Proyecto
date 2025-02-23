@@ -161,8 +161,8 @@
                 <input
                   type="text"
                   class="form-control"
-                  data-translate="login-search-placeholder-u"
-                  id="username"
+                  data-translate="login-placeholder-u"
+                  id="userInput"
                   placeholder="Introduce tu usuario"
                 />
               </div>
@@ -177,7 +177,7 @@
                   type="password"
                   class="form-control"
                   data-translate="login-search-placeholder-p"
-                  id="password"
+                  id="passInput"
                   placeholder="Introduce tu contraseña"
                 />
               </div>
@@ -288,7 +288,7 @@
               role="tab"
               aria-controls="recomendaciones"
               aria-selected="false"
-              data-translate="tab-text-2"
+              data-translate="tab-text-3"
             >
               Recomendaciones
             </button>
@@ -584,7 +584,8 @@
 
           <div class="col-5 col-sm-4 col-md-2 text-center px-2">
             <div class="position-relative mb-2">
-              <a href="#">
+              <a href="#"
+              >
                 <div class="ratio ratio-1x1">
                   <img
                     src="./resources/img/famosos/tom_cruise.jpg"
@@ -608,7 +609,7 @@
               <a href="#">
                 <div class="ratio ratio-1x1">
                   <img
-                    src="./resources/img/famosos/tom_cruise.jpg"
+                    src="./resources/img/famosos/celeb-placeholder.jpg"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Scarlett Johansson"
                   />
@@ -629,7 +630,7 @@
               <a href="#">
                 <div class="ratio ratio-1x1">
                   <img
-                    src="./resources/img/famosos/tom_cruise.jpg"
+                    src="./resources/img/famosos/celeb-placeholder.jpg"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Leonardo DiCaprio"
                   />
@@ -650,7 +651,7 @@
               <a href="#">
                 <div class="ratio ratio-1x1">
                   <img
-                    src="./resources/img/famosos/tom_cruise.jpg"
+                    src="./resources/img/famosos/celeb-placeholder.jpg"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Jennifer Lawrence"
                   />
@@ -671,7 +672,7 @@
               <a href="#">
                 <div class="ratio ratio-1x1">
                   <img
-                    src="./resources/img/famosos/tom_cruise.jpg"
+                    src="./resources/img/famosos/celeb-placeholder.jpg"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Robert Downey Jr."
                   />
@@ -692,7 +693,7 @@
               <a href="#">
                 <div class="ratio ratio-1x1">
                   <img
-                    src="./resources/img/famosos/tom_cruise.jpg"
+                    src="./resources/img/famosos/celeb-placeholder.jpg"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Emma Stone"
                   />
@@ -737,9 +738,16 @@
         <div class="row align-items-center">
           <div class="text-center">
             <div>
+              <div class="d-flex align-items-center justify-content-center gap-2">
               <a data-translate="privacy" href="#" class="text-white me-3">Política de privacidad</a>
-              <a data-translate="use" href="#" class="text-white">Términos de uso</a><br> 
-              <p data-translate="copyright">2024 CriticMedia. Todos los derechos reservados.</p>
+              <a data-translate="use" href="#" class="text-white">Términos de uso</a><br>
+            </div>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <i class="bi bi-c-circle text-light h6"></i>
+                <p class="mb-2" data-translate="copyright">
+                  2024 CriticMedia. Todos los derechos reservados.
+                </p>
+              </div>               
             </div>
           </div>
         </div>

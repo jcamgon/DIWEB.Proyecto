@@ -50,9 +50,9 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto d-lg-flex gap-lg-4">
             <!-- Buscador -->
-            <li class="order-lg-last">
+            <li class="order-lg-last nav-item py-2 mx-lg-2">
               <form class="d-flex" role="search">
                 <input
                   class="form-control me-2"
@@ -67,46 +67,70 @@
               </form>
             </li>
 
-            <li class="nav-item mx-2">
-              <a class="nav-link active" data-translate="home" aria-current="page" href="index.html"
-                >Inicio</a
+            <li class="nav-item py-2 mx-lg-1">
+              <a
+                class="nav-link active"
+                data-translate="home"
+                aria-current="page"
+                href="index.html"
               >
+                Inicio
+              </a>
             </li>
 
-            <li class="nav-item dropdown mx-2">
+            <li class="nav-item dropdown py-2 mx-lg-1">
               <a
-                class="nav-link dropdown-toggle show"
+                class="nav-link dropdown-toggle active"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 Media
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" data-translate="media-item-1" href="lista-peliculas.html"
+                  <a
+                    class="dropdown-item"
+                    data-translate="media-item-1"
+                    href="lista-peliculas.html"
                     >Películas</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" data-translate="media-item-2" href="#">Series de Televisión</a>
+                  <a
+                    class="dropdown-item"
+                    data-translate="media-item-2"
+                    href="#"
+                    >Series de Televisión</a
+                  >
                 </li>
-                <li><a class="dropdown-item" data-translate="media-item-3" href="#">Anime</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    data-translate="media-item-3"
+                    href="#"
+                    >Anime</a
+                  >
+                </li>
               </ul>
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" data-translate="about" href="aboutus.html">Sobre nosotros</a>
-            </li>
-            <!-- Desplegable idiomas -->
-            <li class="nav-item dropdown ">
+
+            <li class="nav-item py-2 mx-lg-1">
               <a
-                class="nav-link dropdown-toggle language-btn"
+                class="nav-link active"
+                data-translate="about"
+                href="aboutus.html"
+                >Sobre nosotros</a
+              >
+            </li>
+
+            <!-- Desplegable idiomas -->
+            <li class="nav-item dropdown py-2 mx-lg-1">
+              <a
+                class="nav-link active dropdown-toggle language-btn"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
-                id="languageDropdown"
               >
                 <img
                   id="selectedFlag"
@@ -150,8 +174,9 @@
                 </li>
               </ul>
             </li>
+
             <!-- Botón de login -->
-            <li class="me-3">
+            <li class="nav-item py-2 mx-lg-1">
               <button
                 class="btn btn-outline-light"
                 data-translate="login"
@@ -178,7 +203,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" data-translate="login" id="loginModalLabel">Iniciar sesión</h4>
+            <h4 class="modal-title" data-translate="login" id="loginModalLabel">
+              Iniciar sesión
+            </h4>
             <button
               type="button"
               class="btn-close"
@@ -189,7 +216,12 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="username" data-translate="login-user" class="form-label">Usuario</label>
+                <label
+                  for="username"
+                  data-translate="login-user"
+                  class="form-label"
+                  >Usuario</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -199,7 +231,12 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="password" data-translate="login-pass" class="form-label">Contraseña</label>
+                <label
+                  for="password"
+                  data-translate="login-pass"
+                  class="form-label"
+                  >Contraseña</label
+                >
                 <input
                   type="password"
                   class="form-control"
@@ -209,13 +246,17 @@
                 />
               </div>
 
-              <button type="button" data-translate="login" class="btn btn-outline-dark">
+              <button
+                type="button"
+                data-translate="login"
+                class="btn btn-outline-dark"
+              >
                 Iniciar Sesión
               </button>
 
               <a
                 class="btn btn-outline-dark"
-                data-translate="login-signin"
+                data-translate="login-signup"
                 href="form-registro.html"
                 role="button"
                 >Regístrarse</a
@@ -226,15 +267,87 @@
       </div>
     </div>
 
-    <div class="content-wrapper">
-      
+    <div class="content-wrapper py-5 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div
+              class="ratio ratio-16x9 animate-on-scroll"
+              data-animation="bounceInLeft"
+            >
+              <video
+                width="600"
+                height="400"
+                controls
+                class="rounded shadow-sm"
+              >
+                <source
+                  src="./resources/videos/"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+          <div class="col-lg-6 animate-on-scroll"
+          data-animation="bounceInRight">
+            <h2 class="mb-4 about-title" data-translate="about-title">Sobre CriticMedia</h2>
+            <p class="lead mb-4 about-message" data-translate="about-text-1">
+              Bienvenidos a CriticMedia, tu destino definitivo para análisis
+              profundos y críticas honestas de las últimas películas y series de
+              televisión.
+            </p>
+            <p class="mb-4 about-message" data-translate="about-text-2">
+              Desde 2024, nuestro equipo de críticos ha estado comprometido con
+              brindar perspectivas únicas y análisis detallados que van más allá
+              de la superficie. Nos enorgullecemos de ofrecer críticas objetivas
+              que te ayudarán a descubrir contenido que verdaderamente vale la
+              pena ver.
+            </p>
+            <p class="mb-4 about-message" data-translate="about-text-3">
+              En CriticMedia, creemos que cada película y serie tiene una
+              historia que contar, no solo en la pantalla sino también detrás de
+              ella. Nuestras reseñas exploran elementos técnicos, narrativos y
+              artísticos, proporcionándote una visión completa de cada obra.
+            </p>
+          </div>
+        </div>
+        <div
+          class="container-fluid contact mt-5 animate-on-scroll"
+          data-animation="bounceInUp"
+        >
+          <div class="card border-0 bg-dark">
+            <div class="card-body">
+              <div>
+                <div class="row text-center mb-4 mb-md-0">
+                  <h4 class="card-title mb-3" data-translate="contact">
+                    Contacto  
+                  </h4>
+                  
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-telephone text-light h4"></i>
+                  <p class="mb-2" data-translate="contact-phone">Teléfono: 959 000 000</p>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-telephone text-light h4"></i>
+                  <p class="mb-2" data-translate="contact-phone-2">Teléfono Secundario: 699 000 000</p>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-envelope-at text-light h4"></i>
+                  <p class="mb-2" data-translate="contact-email">Correo Electrónico: support@criticmedia.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
       <div class="container-fluid">
         <div class="text-center social-icons">
-          <h5 class="card-title">Redes Sociales</h5>
+          <h5 data-translate="socials" class="card-title">Redes Sociales</h5>
           <a
             href="https://www.facebook.com/"
             target="_blank"
@@ -255,14 +368,44 @@
         <div class="row align-items-center">
           <div class="text-center">
             <div>
-              <a href="#" class="text-white me-3">Política de privacidad</a>
-              <a href="#" class="text-white">Términos de uso</a>
-              <p>&copy; 2024 CriticMedia. Todos los derechos reservados.</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+              <a data-translate="privacy" href="#" class="text-white me-3">Política de privacidad</a>
+              <a data-translate="use" href="#" class="text-white">Términos de uso</a><br>
+            </div>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <i class="bi bi-c-circle text-light h6"></i>
+                <p class="mb-2" data-translate="copyright">
+                  2024 CriticMedia. Todos los derechos reservados.
+                </p>
+              </div>               
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Animación en hover para fotos de famosos -->
+    <script>
+      const enlacesAnimados = document.querySelectorAll(".hover-animado");
+
+      enlacesAnimados.forEach((enlace) => {
+        enlace.addEventListener("mouseenter", () => {
+          enlace.classList.add(
+            "animate__animated",
+            "animate__headShake",
+            "animate__fast"
+          );
+        });
+
+        enlace.addEventListener("animationend", () => {
+          enlace.classList.remove(
+            "animate__animated",
+            "animate__headShake",
+            "animate__fast"
+          );
+        });
+      });
+    </script>
 
     <!-- Bootstrap Bundle JS -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -281,31 +424,40 @@
         const animatedElements =
           document.querySelectorAll(".animate-on-scroll");
 
+        // Inicialmente, aseguramos que los elementos estén ocultos
+        animatedElements.forEach((element) => {
+          element.classList.add("hidden");
+        });
+
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-
               if (entry.isIntersecting) {
                 const element = entry.target;
                 const animation = element.dataset.animation;
 
-                element.classList.add(
-                  "animated",
-                  `animate__animated`,
-                  `animate__${animation}`
-                );
+                // Mostrar el elemento antes de la animación
+                element.classList.remove("hidden");
 
-                
+                // Asegurar que la animación se aplique correctamente
+                requestAnimationFrame(() => {
+                  element.classList.add(
+                    "animated",
+                    "animate__animated",
+                    `animate__${animation}`
+                  );
+                });
+
+                // Dejar de observar después de la animación
                 observer.unobserve(element);
               }
             });
           },
           {
-            threshold: 0.1, 
+            threshold: 0.1, // Se activa cuando el 10% del elemento es visible
           }
         );
 
-        
         animatedElements.forEach((element) => {
           observer.observe(element);
         });

@@ -604,4 +604,36 @@ h4 {
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+.about-title {
+  font-family: "future-earth";
+}
+
+.about-message {
+  text-align: justify;
+}
+
+.contact {
+  margin-bottom: 5%;
+  width: 85%;
+  display: grid;
+  place-content: center;
+}
+
+.contact h4 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.contact p {
+  color: white;
+  text-align: start;
+  font-family: "Arial", sans-serif;
+  font-size: 1.4em;
+}
+
+.copytext {
+  text-align: center;
 }/*# sourceMappingURL=custom.css.map */
