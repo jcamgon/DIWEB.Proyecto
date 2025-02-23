@@ -122,4 +122,7 @@ window.onload = function () {
   } else {
     changeLanguage("es"); // Por defecto, español si no hay cookie
   }
+
 };
+
+
