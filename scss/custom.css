@@ -604,12 +604,4 @@ h4 {
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-.hover-animado {
-  transition: transform 0.3s ease;
-}
-
-.hover-animado:hover {
-  transform: scale(1.05);
 }/*# sourceMappingURL=custom.css.map */
