@@ -64,6 +64,19 @@ export const translations = {
     "contact-phone-2": "Teléfono Secundario: 699 000 000",
     "contact-email": "Correo: support@criticmedia.com",
 
+    //serie pagina
+    "serie-info": "Información de la Serie",
+    "serie-info-startdate": "Fecha de inicio: 20 de Enero de 2008",
+    "serie-info-enddate": "Fecha de finalización: 29 de Septiembre de 2013 ",
+    "serie-info-cast": "Reparto: Bryan Cranston, Aaron Paul, Anna Gunn",
+    "serie-s": "Sinopsis",
+    "serie-s-1": "Un profesor de química de secundaria se convierte en fabricante de metanfetamina y se asocia con un ex alumno para crear un imperio de la droga, mientras que su vida se sale de control.",
+    "serie-s-2": "Breaking Bad sigue la transformación de Walter White, un profesor de química de secundaria sobrecualificado y frustrado que, tras ser diagnosticado con cáncer de pulmón terminal, decide adentrarse en el mundo del narcotráfico para asegurar el futuro económico de su familia. Junto a Jesse Pinkman, un antiguo estudiante, comienza a producir y distribuir metanfetamina, destacando por la pureza excepcional de su producto.",
+    "serie-s-3": "A medida que la serie avanza, somos testigos de la dramática evolución del protagonista, quien pasa de ser un hombre común y corriente a convertirse en el temido Heisenberg, un nombre que resuena en los bajos fondos de Albuquerque. La serie explora temas profundos como la moral, la familia, el poder y las consecuencias de nuestras decisiones, mientras mantiene al espectador en constante tensión con sus giros argumentales y su impecable narrativa.",
+    "serie-rev": "Reseñas",
+    "serie-rev-write": "Escribe tu reseña",
+    "serie-rev-write-desc": "Para escribir una reseña, por favor inicia sesión.",
+
     //footer
     socials: "Redes Sociales",
     privacy: "Política de privacidad",
@@ -133,6 +146,19 @@ export const translations = {
     "contact-phone": "Phone: 959 000 000",
     "contact-phone-2": "Secundary Phone: 699 000 000",
     "contact-email": "Email: support@criticmedia.com",
+
+    //serie pagina
+    "serie-info": "TV Show Information",
+    "serie-info-startdate": "Start date: January 20th of 2008",
+    "serie-info-enddate": "End date: September 29th of 2013",
+    "serie-info-cast": "Cast: Bryan Cranston, Aaron Paul, Anna Gunn",
+    "serie-s": "Synopsis",
+    "serie-s-1": "A high school chemistry teacher becomes a meth manufacturer and teams up with a former student to create a drug empire, while his life spirals out of control.",
+    "serie-s-2": "Breaking Bad follows the transformation of Walter White, an overqualified and frustrated high school chemistry teacher who, after being diagnosed with terminal lung cancer, decides to enter the world of drug trafficking to secure his family's financial future. Together with Jesse Pinkman, a former student, he begins to produce and distribute methamphetamine, standing out for the exceptional purity of his product.",
+    "serie-s-3": "As the series progresses, we witness the dramatic evolution of the protagonist, who goes from being an ordinary man to becoming the feared Heisenberg, a name that resonates in the underworld of Albuquerque. The series explores deep themes such as morality, family, power and the consequences of our decisions, while keeping the viewer in constant tension with its plot twists and impeccable narrative.",
+    "serie-rev": "Reviews",
+    "serie-rev-write": "Write your review",
+    "serie-rev-write-desc": "Log in to write your review.",
 
     //footer
     socials: "Social Media",
