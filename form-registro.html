@@ -273,41 +273,101 @@
       </div>
     </div>
 
-    <h1 class="text-center mt-4 animate-on-scroll animate__delay-1s" data-animation="tada" data-translate="registro-title">Únete a nosotros!!!</h1>
-    <div class="container form-page c-flex justify-content-center align-items-center mt-1 mb-5 animate-on-scroll" data-animation="bounceIn">
-      <div class="card-form text-bg-dark shadow-lg rounded">
-        <div class="row">
-          <div class="col-md-7 d-none d-sm-block">
-            <img src="./resources/img/surprised-man.png" alt="Imagen" class="img-fluid card-img-left h-100">
+    <!-- Contenido -->
+    <div
+      class="container-registro c-flex justify-content-center align-items-center animate-on-scroll"
+      data-animation="bounceIn"
+    >
+    <h1
+      class="title-registro mb-4 animate-on-scroll animate__delay-1s"
+      data-animation="tada"
+      data-translate="registro-title"
+    >
+      Únete a nosotros!!!
+    </h1>
+      <div class="card-form-registro card-dark-registro shadow-lg">
+        <div class="row g-0">
+          <div class="col-md-7 d-none d-md-block">
+            <img
+              src="./resources/img/surprised-man.png"
+              alt="Imagen"
+              class="img-registro rounded-start"
+            />
           </div>
-          <div class="col-md-5 mt-4">
-            <div class="card-form">
-              <form id="formulario" class="needs-validation form-registro" novalidate>
+          <div class="col-md-5 col-registro">
+            <div class="card-form-registro">
+              <form
+                id="formulario"
+                class="form-registro needs-validation"
+                novalidate
+              >
                 <div class="mb-3">
-                  <label for="usuario" class="form-label" data-translate="registro-user">Nombre de Usuario</label>
-                  <input type="text" class="form-control w-75" id="usuario" required>
-                  <!-- <div class="invalid-feedback">El nombre de usuario es obligatorio.</div> -->
+                  <label
+                    for="usuario"
+                    class="form-label-registro"
+                    data-translate="registro-user"
+                    >Nombre de Usuario</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control-registro"
+                    id="usuario"
+                    required
+                  />
                 </div>
-  
+
                 <div class="mb-3">
-                  <label for="email" class="form-label" data-translate="registro-email">Correo Electrónico</label>
-                  <input type="email" class="form-control w-75" id="email" required>
-                  <!-- <div class="invalid-feedback">Ingrese un correo electrónico válido.</div> -->
+                  <label
+                    for="email"
+                    class="form-label-registro"
+                    data-translate="registro-email"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control-registro"
+                    id="email"
+                    required
+                  />
                 </div>
-  
+
                 <div class="mb-3">
-                  <label for="contraseña" class="form-label" data-translate="registro-pass">Contraseña</label>
-                  <input type="password" class="form-control w-75" id="contraseña" required>
-                  <!-- <div class="invalid-feedback">La contraseña es obligatoria.</div> -->
+                  <label
+                    for="contraseña"
+                    class="form-label-registro"
+                    data-translate="registro-pass"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control-registro"
+                    id="contraseña"
+                    required
+                  />
                 </div>
-  
+
                 <div class="mb-3">
-                  <label for="confirmar-contraseña" class="form-label" data-translate="registro-confirm">Confirmar Contraseña</label>
-                  <input type="password" class="form-control w-75" id="confirmar-contraseña" required>
-                  <!-- <div class="invalid-feedback">Las contraseñas no coinciden.</div> -->
+                  <label
+                    for="confirmar-contraseña"
+                    class="form-label-registro"
+                    data-translate="registro-confirm"
+                    >Confirmar Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control-registro"
+                    id="confirmar-contraseña"
+                    required
+                  />
                 </div>
-  
-                <button type="submit" class="btn btn-outline-light" data-translate="registro-send">Enviar</button>
+
+                <button
+                  type="submit"
+                  class="btn-registro"
+                  data-translate="registro-send"
+                >
+                  Enviar
+                </button>
               </form>
             </div>
           </div>
