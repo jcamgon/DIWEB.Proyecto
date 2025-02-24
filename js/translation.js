@@ -14,6 +14,9 @@ export const translations = {
     "media-item-3": "Anime",
     home: "Inicio",
 
+    // Tooltip
+    "tooltip-un": "",
+
     // Login
     "login-user": "Usuario",
     "login-pass": "Contraseña",

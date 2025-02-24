@@ -66,6 +66,10 @@ $fuente-welcome: $fuente-secundaria;
   animation-range: entry 0% cover 40%;
 }
 
+h1 {
+  font-family: $fuente-secundaria;
+}
+
 html,
 body {
   height: 100%;
@@ -200,15 +204,6 @@ footer {
     }
   }
 
-  .form-control {
-    font-size: 0.85rem;
-    padding: 5px 10px;
-  }
-
-  .btn-outline-success {
-    padding: 5px 10px;
-    font-size: 0.85rem;
-  }
 }
 
 .navbar input {
@@ -252,13 +247,13 @@ footer {
     &.active {
       color: $color-texto-secundario;
       background-color: lighten($color-footer, 20%);
-      border-color: $color-footer $color-footer transparent;
+      border-color: $color-footer $color-footer $color-footer;
     }
 
     &:hover {
       color: $color-texto-secundario;
       background-color: lighten($color-footer, 25%);
-      border-color: $color-footer $color-footer transparent;
+      border-color: $color-footer $color-footer $color-footer;
     }
   }
 }
@@ -724,3 +719,12 @@ h4 {
   width: auto;
 }
 
+.card-img-left {
+  object-fit: cover;
+}
+
+
+.btn-outline-success {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+}

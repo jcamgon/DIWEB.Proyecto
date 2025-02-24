@@ -25,7 +25,6 @@
     </script>
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand align-items-stretch" href="index.html">
@@ -101,6 +100,9 @@
                     class="dropdown-item"
                     data-translate="media-item-2"
                     href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                    data-bs-placement="right"
                     >Series de Televisión</a
                   >
                 </li>
@@ -109,6 +111,9 @@
                     class="dropdown-item"
                     data-translate="media-item-3"
                     href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                    data-bs-placement="right"
                     >Anime</a
                   >
                 </li>
@@ -225,8 +230,8 @@
                 <input
                   type="text"
                   class="form-control"
-                  data-translate="login-search-placeholder-u"
-                  id="username"
+                  data-translate="login-placeholder-u"
+                  id="userInput"
                   placeholder="Introduce tu usuario"
                 />
               </div>
@@ -241,7 +246,7 @@
                   type="password"
                   class="form-control"
                   data-translate="login-search-placeholder-p"
-                  id="password"
+                  id="passInput"
                   placeholder="Introduce tu contraseña"
                 />
               </div>

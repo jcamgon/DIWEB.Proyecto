@@ -36,7 +36,7 @@
           />
           <b>CriticMedia</b>
         </a>
-    
+
         <button
           class="navbar-toggler"
           type="button"
@@ -48,7 +48,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto d-lg-flex gap-lg-4">
             <!-- Buscador -->
@@ -66,59 +66,130 @@
                 </button>
               </form>
             </li>
-    
+
             <li class="nav-item py-2 mx-lg-1">
-              <a class="nav-link active" data-translate="home" aria-current="page" href="index.html">
+              <a
+                class="nav-link active"
+                data-translate="home"
+                aria-current="page"
+                href="index.html"
+              >
                 Inicio
               </a>
             </li>
-    
+
             <li class="nav-item dropdown py-2 mx-lg-1">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
                 Media
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" data-translate="media-item-1" href="lista-peliculas.html">Películas</a>
+                  <a
+                    class="dropdown-item"
+                    data-translate="media-item-1"
+                    href="lista-peliculas.html"
+                    >Películas</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" data-translate="media-item-2" href="#">Series de Televisión</a>
+                  <a
+                    class="dropdown-item"
+                    data-translate="media-item-2"
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                    data-bs-placement="right"
+                    >Series de Televisión</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" data-translate="media-item-3" href="#">Anime</a>
+                  <a
+                    class="dropdown-item"
+                    data-translate="media-item-3"
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                    data-bs-placement="right"
+                    >Anime</a
+                  >
                 </li>
               </ul>
             </li>
-    
+
             <li class="nav-item py-2 mx-lg-1">
-              <a class="nav-link active" data-translate="about" href="aboutus.html">Sobre nosotros</a>
+              <a
+                class="nav-link active"
+                data-translate="about"
+                href="aboutus.html"
+                >Sobre nosotros</a
+              >
             </li>
-    
+
             <!-- Desplegable idiomas -->
             <li class="nav-item dropdown py-2 mx-lg-1">
-              <a class="nav-link active dropdown-toggle language-btn" href="#" role="button" data-bs-toggle="dropdown">
-                <img id="selectedFlag" src="resources/img/flags/es.png" alt="Español" width="24" height="20" />
+              <a
+                class="nav-link active dropdown-toggle language-btn"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  id="selectedFlag"
+                  src="resources/img/flags/es.png"
+                  alt="Español"
+                  width="24"
+                  height="20"
+                />
                 <span id="selectedLanguage">Español</span>
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item language-option" href="#" data-language="es">
-                    <img src="resources/img/flags/es.png" alt="Español" width="24" height="20" />
+                  <a
+                    class="dropdown-item language-option"
+                    href="#"
+                    data-language="es"
+                  >
+                    <img
+                      src="resources/img/flags/es.png"
+                      alt="Español"
+                      width="24"
+                      height="20"
+                    />
                     Español
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item language-option" href="#" data-language="en">
-                    <img src="resources/img/flags/en.png" alt="English" width="24" height="20" />
+                  <a
+                    class="dropdown-item language-option"
+                    href="#"
+                    data-language="en"
+                  >
+                    <img
+                      src="resources/img/flags/en.png"
+                      alt="English"
+                      width="24"
+                      height="20"
+                    />
                     English
                   </a>
                 </li>
               </ul>
             </li>
-    
+
             <!-- Botón de login -->
             <li class="nav-item py-2 mx-lg-1">
-              <button class="btn btn-outline-light" data-translate="login" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <button
+                class="btn btn-outline-light"
+                data-translate="login"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
                 Iniciar Sesión
               </button>
             </li>
@@ -126,7 +197,6 @@
         </div>
       </div>
     </nav>
-    
 
     <!-- Modal de Login -->
     <div
@@ -234,17 +304,22 @@
       </div>
       <!-- Series populares -->
       <div
-        class="container-fluid mt-5 movie-series-section animate-on-scroll animate__slow"
+        class="container-fluid py-4 mt-4 movie-series-section animate-on-scroll animate__slow"
         data-animation="fadeInUp"
       >
-        <h1 class="text-center section-title" data-translate="movies-show-title">Películas y Series</h1>
+        <h1
+          class="text-center section-title"
+          data-translate="movies-show-title"
+        >
+          Películas y Series
+        </h1>
         <p class="section-description" data-translate="movies-show-desc">
           Descubre las últimas tendencias en entretenimiento
         </p>
 
         <!-- pestañas -->
         <ul
-          class="nav nav-tabs justify-content-center"
+          class="nav nav-tabs justify-content-center py-4 mt-4 mb-0"
           id="movieSeriesTabs"
           role="tablist"
         >
@@ -317,7 +392,9 @@
                     />
                   </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-pop-1">Breaking Bad</h4>
+                    <h4 class="card-title" data-translate="card-title-pop-1">
+                      Breaking Bad
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -339,7 +416,9 @@
                     />
                   </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-pop-2">La Casa Del Dragón</h4>
+                    <h4 class="card-title" data-translate="card-title-pop-2">
+                      La Casa Del Dragón
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -360,7 +439,9 @@
                     />
                   </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-pop-3">Ataque a los Titanes</h4>
+                    <h4 class="card-title" data-translate="card-title-pop-3">
+                      Ataque a los Titanes
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -381,7 +462,9 @@
                     />
                   </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-pop-4">Interestelar</h4>
+                    <h4 class="card-title" data-translate="card-title-pop-4">
+                      Interestelar
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -399,13 +482,21 @@
                   class="card animate-on-scroll animate__delay-0-5s animate__fast"
                   data-animation="flipInY"
                 >
-                  <img
-                    src="resources/img/poster/kraven_poster.jpg"
-                    class="card-img-top"
-                    alt="Dune Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/kraven_poster.jpg"
+                      class="card-img-top"
+                      alt="Dune Poster"
+                    />
+                  </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-prox-1">Kraven el Cazador</h4>
+                    <h4 class="card-title" data-translate="card-title-prox-1">
+                      Kraven el Cazador
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -415,13 +506,21 @@
                   class="card animate-on-scroll animate__delay-1s animate__fast"
                   data-animation="flipInY"
                 >
-                  <img
-                    src="resources/img/poster/haunting_poster.jpg"
-                    class="card-img-top"
-                    alt="Five Nights at Freddy's Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/haunting_poster.jpg"
+                      class="card-img-top"
+                      alt="Five Nights at Freddy's Poster"
+                    />
+                  </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-prox-2">La maldición del Queen Mary</h4>
+                    <h4 class="card-title" data-translate="card-title-prox-2">
+                      La maldición del Queen Mary
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -430,13 +529,21 @@
                   class="card animate-on-scroll animate__delay-1-5s animate__fast"
                   data-animation="flipInY"
                 >
-                  <img
-                    src="resources/img/poster/mufasa_poster.jpg"
-                    class="card-img-top"
-                    alt="Madame Web Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/mufasa_poster.jpg"
+                      class="card-img-top"
+                      alt="Madame Web Poster"
+                    />
+                  </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-prox-3">Mufasa: El rey león</h4>
+                    <h4 class="card-title" data-translate="card-title-prox-3">
+                      Mufasa: El rey león
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -445,13 +552,21 @@
                   class="card animate-on-scroll animate__delay-2s animate__fast"
                   data-animation="flipInY"
                 >
-                  <img
-                    src="resources/img/poster/conclave_poster.jpg"
-                    class="card-img-top"
-                    alt="Inside Out 2 Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/conclave_poster.jpg"
+                      class="card-img-top"
+                      alt="Inside Out 2 Poster"
+                    />
+                  </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-prox-4">Cónclave</h4>
+                    <h4 class="card-title" data-translate="card-title-prox-4">
+                      Cónclave
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -469,13 +584,21 @@
                   class="card animate-on-scroll animate__delay-0-5s animate__fast"
                   data-animation="flipInY"
                 >
-                  <img
-                    src="resources/img/poster/stranger_things_poster.jpg"
-                    class="card-img-top"
-                    alt="Stranger Things Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/stranger_things_poster.jpg"
+                      class="card-img-top"
+                      alt="Stranger Things Poster"
+                    />
+                  </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-rec-1">Stranger Things</h4>
+                    <h4 class="card-title" data-translate="card-title-rec-1">
+                      Stranger Things
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -485,13 +608,21 @@
                   class="card animate-on-scroll animate__delay-1s animate__fast"
                   data-animation="flipInY"
                 >
-                  <img
-                    src="resources/img/poster/dark_poster.jpg"
-                    class="card-img-top"
-                    alt="Dark Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/dark_poster.jpg"
+                      class="card-img-top"
+                      alt="Dark Poster"
+                    />
+                  </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-rec-2">Dark</h4>
+                    <h4 class="card-title" data-translate="card-title-rec-2">
+                      Dark
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -500,13 +631,21 @@
                   class="card animate-on-scroll animate__delay-1-5s animate__fast"
                   data-animation="flipInY"
                 >
-                  <img
-                    src="resources/img/poster/the_witcher_poster.jpg"
-                    class="card-img-top"
-                    alt="The Witcher Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/the_witcher_poster.jpg"
+                      class="card-img-top"
+                      alt="The Witcher Poster"
+                    />
+                  </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-rec-3">The Witcher</h4>
+                    <h4 class="card-title" data-translate="card-title-rec-3">
+                      The Witcher
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -515,13 +654,21 @@
                   class="card animate-on-scroll animate__delay-2s animate__fast"
                   data-animation="flipInY"
                 >
-                  <img
-                    src="resources/img/poster/black_mirror_poster.jpg"
-                    class="card-img-top"
-                    alt="Black Mirror Poster"
-                  />
+                  <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Sitio no disponible actualmente."
+                  >
+                    <img
+                      src="resources/img/poster/black_mirror_poster.jpg"
+                      class="card-img-top"
+                      alt="Black Mirror Poster"
+                    />
+                  </a>
                   <div class="card-body">
-                    <h4 class="card-title" data-translate="card-title-rec-4">Black Mirror</h4>
+                    <h4 class="card-title" data-translate="card-title-rec-4">
+                      Black Mirror
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -540,7 +687,9 @@
         <div class="card-body">
           <div>
             <div class="row text-center mb-4 mb-md-0">
-              <h4 class="card-title mb-3" data-translate="wl-title">Tu Lista de Seguimiento</h4>
+              <h4 class="card-title mb-3" data-translate="wl-title">
+                Tu Lista de Seguimiento
+              </h4>
               <i class="bi bi-bookmark-plus bookmark-icon"></i>
             </div>
             <p data-translate="wl-desc">
@@ -572,20 +721,29 @@
     </div>
 
     <!-- Celebridades -->
-    <div class="container py-4 my-4 celeb-container animate-on-scroll" data-animation="lightSpeedInLeft">
-      <div class="d-flex justify-content-between align-items-center mb-5 celeb-title">
+    <div
+      class="container py-4 my-4 celeb-container animate-on-scroll"
+      data-animation="lightSpeedInLeft"
+    >
+      <div
+        class="d-flex justify-content-between align-items-center mb-5 celeb-title"
+      >
         <h3 class="mb-0" data-translate="cel-title">Celebridades Populares</h3>
-        <a href="#" class="text-decoration-none" data-translate="see-all">Ver todas <i class="bi bi-arrow-right"></i></a>
+        <a
+          href="#"
+          class="text-decoration-none"
+          data-translate="see-all"
+          data-bs-toggle="tooltip"
+          data-bs-title="Sitio no disponible actualmente."
+          >Ver todas <i class="bi bi-arrow-right"></i
+        ></a>
       </div>
 
       <div class="position-relative">
-
         <div class="row flex-nowrap overflow-auto pb-4 hide-scrollbar">
-
           <div class="col-5 col-sm-4 col-md-2 text-center px-2">
             <div class="position-relative mb-2">
-              <a href="#"
-              >
+              <a href="#">
                 <div class="ratio ratio-1x1">
                   <img
                     src="./resources/img/famosos/tom_cruise.jpg"
@@ -603,7 +761,7 @@
             <h6 class="mb-0">Tom Cruise</h6>
             <p data-translate="actor" class="text-muted">Actor</p>
           </div>
-    
+
           <div class="col-5 col-sm-4 col-md-2 text-center px-2">
             <div class="position-relative mb-2">
               <a href="#">
@@ -708,7 +866,6 @@
             <h6 class="mb-0">Emma Stone</h6>
             <p data-translate="actress" class="text-muted">Actriz</p>
           </div>
-              
         </div>
       </div>
     </div>
@@ -797,7 +954,7 @@
         var contactoBtn = document.getElementById("contactoBtn");
         new bootstrap.Popover(contactoBtn, {
           html: true,
-          placement: window.innerWidth >= 992 ? "right" : "bottom", 
+          placement: window.innerWidth >= 992 ? "right" : "bottom",
         });
       });
     </script>
@@ -808,11 +965,19 @@
 
       enlacesAnimados.forEach((enlace) => {
         enlace.addEventListener("mouseenter", () => {
-          enlace.classList.add("animate__animated", "animate__headShake", "animate__fast");
+          enlace.classList.add(
+            "animate__animated",
+            "animate__headShake",
+            "animate__fast"
+          );
         });
 
         enlace.addEventListener("animationend", () => {
-          enlace.classList.remove("animate__animated", "animate__headShake", "animate__fast");
+          enlace.classList.remove(
+            "animate__animated",
+            "animate__headShake",
+            "animate__fast"
+          );
         });
       });
     </script>

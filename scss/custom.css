@@ -42,6 +42,10 @@
   animation-range: entry 0% cover 40%;
 }
 
+h1 {
+  font-family: "future-earth";
+}
+
 html,
 body {
   height: 100%;
@@ -163,14 +167,6 @@ footer .social-icons a:hover {
   width: 24px;
   height: 20px;
 }
-.navbar .form-control {
-  font-size: 0.85rem;
-  padding: 5px 10px;
-}
-.navbar .btn-outline-success {
-  padding: 5px 10px;
-  font-size: 0.85rem;
-}
 
 .navbar input {
   font-family: "Arial", sans-serif;
@@ -211,12 +207,12 @@ footer .social-icons a:hover {
 .nav-tabs .nav-link.active {
   color: white;
   background-color: #4e5862;
-  border-color: #212529 #212529 transparent;
+  border-color: #212529 #212529 #212529;
 }
 .nav-tabs .nav-link:hover {
   color: white;
   background-color: #5a6570;
-  border-color: #212529 #212529 transparent;
+  border-color: #212529 #212529 #212529;
 }
 
 .movie-series-section {
@@ -646,4 +642,14 @@ h4 {
 .img-poster-serie {
   height: 232px;
   width: auto;
+}
+
+.card-img-left {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-outline-success {
+  padding: 5px 10px;
+  font-size: 0.85rem;
 }/*# sourceMappingURL=custom.css.map */
