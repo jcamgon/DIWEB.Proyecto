@@ -227,9 +227,6 @@ footer .social-icons a:hover {
   transition: transform 0.3s ease;
   width: 100%;
 }
-.movie-series-section .card:hover {
-  transform: scale(0.85);
-}
 .movie-series-section .card-img-top {
   width: 100%;
   height: auto;
@@ -262,9 +259,6 @@ footer .social-icons a:hover {
   .movie-series-section .movie-series-section .card {
     transform: scale(0.9);
     margin-bottom: 15px;
-  }
-  .movie-series-section .movie-series-section .card:hover {
-    transform: scale(0.95);
   }
 }
 
@@ -307,10 +301,6 @@ footer .social-icons a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-  transition: transform 0.3s ease;
-}
-.movie-list-section .movie-poster:hover {
-  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .movie-list-section td:nth-child(4),
