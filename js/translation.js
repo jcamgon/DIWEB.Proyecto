@@ -1,21 +1,26 @@
 export const translations = {
   es: {
     //titulo
-    title: "Bienvenido a CriticMedia",
-    subtitle:
-      "Todo lo que necesitas saber sobre últimos lanzamientos y películas",
+    "title": "Bienvenido a CriticMedia",
+    "subtitle": "Todo lo que necesitas saber sobre últimos lanzamientos y películas",
 
     // Navbar
     "search-placeholder": "Busca en CriticMedia",
-    login: "Iniciar Sesión",
-    about: "Sobre Nosotros",
+    "login": "Iniciar Sesión",
+    "about": "Sobre Nosotros",
     "media-item-1": "Películas",
     "media-item-2": "Series",
     "media-item-3": "Anime",
-    home: "Inicio",
+    "home": "Inicio",
 
-    // Tooltip
-    "tooltip-un": "",
+    // Registro
+    "registro-title": "Únete a Nosotros!!!",
+    "registro-user": "Nombre de Usuario",
+    "registro-email": "Correo Electrónico",
+    "registro-pass": "Contraseña",
+    "registro-confirm": "Confirmar Contraseña",
+    "registro-send": "Enviar",
+
 
     // Login
     "login-user": "Usuario",
@@ -88,17 +93,25 @@ export const translations = {
   },
   en: {
     //titulo
-    title: "Welcome to CriticMedia",
-    subtitle: "Everything you need to know about latest releases and movies",
+    "title": "Welcome to CriticMedia",
+    "subtitle": "Everything you need to know about latest releases and movies",
 
     // Navbar
     "search-placeholder": "Search in CriticMedia",
-    login: "Log In",
-    about: "About Us",
+    "login": "Log In",
+    "about": "About Us",
     "media-item-1": "Movies",
     "media-item-2": "TV Shows",
     "media-item-3": "Anime",
-    home: "Home",
+    "home": "Home",
+
+    // Registro
+    "registro-title": "Join Us!!!",
+    "registro-user": "User Name",
+    "registro-email": "Email",
+    "registro-pass": "Password",
+    "registro-confirm": "Confirm Password",
+    "registro-send": "Send",
 
     // Login
     "login-user": "Username",
