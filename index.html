@@ -726,6 +726,7 @@
                       src="resources/img/poster/bb_poster.webp"
                       class="card-img-top"
                       alt="Breaking Bad Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -750,6 +751,7 @@
                       src="resources/img/poster/hotd_poster.webp"
                       class="card-img-top"
                       alt="La Casa Del Dragón Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -774,6 +776,7 @@
                       src="resources/img/poster/aot_poster.webp"
                       class="card-img-top"
                       alt="Ataque a los Titanes Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -798,6 +801,7 @@
                       src="resources/img/poster/inter_poster.webp"
                       class="card-img-top"
                       alt="Interestelar Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -830,6 +834,7 @@
                       src="resources/img/poster/kraven_poster.webp"
                       class="card-img-top"
                       alt="Dune Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -854,6 +859,7 @@
                       src="resources/img/poster/haunting_poster.webp"
                       class="card-img-top"
                       alt="Five Nights at Freddy's Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -878,6 +884,7 @@
                       src="resources/img/poster/mufasa_poster.webp"
                       class="card-img-top"
                       alt="Madame Web Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -902,6 +909,7 @@
                       src="resources/img/poster/conclave_poster.webp"
                       class="card-img-top"
                       alt="Inside Out 2 Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -934,6 +942,7 @@
                       src="resources/img/poster/stranger_things_poster.webp"
                       class="card-img-top"
                       alt="Stranger Things Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -958,6 +967,7 @@
                       src="resources/img/poster/dark_poster.webp"
                       class="card-img-top"
                       alt="Dark Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -982,6 +992,7 @@
                       src="resources/img/poster/the_witcher_poster.webp"
                       class="card-img-top"
                       alt="The Witcher Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -1006,6 +1017,7 @@
                       src="resources/img/poster/black_mirror_poster.webp"
                       class="card-img-top"
                       alt="Black Mirror Poster"
+                      loading="lazy"
                     />
                   </a>
                   <div class="card-body">
@@ -1093,6 +1105,7 @@
                     src="./resources/img/famosos/tom_cruise.webp"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Tom Cruise"
+                    loading="lazy"
                   />
                 </div>
               </a>
@@ -1109,6 +1122,7 @@
                     src="./resources/img/famosos/scarlett.webp"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Scarlett Johansson"
+                    loading="lazy"
                   />
                 </div>
               </a>
@@ -1126,6 +1140,7 @@
                     src="./resources/img/famosos/leonardo.webp"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Leonardo DiCaprio"
+                    loading="lazy"
                   />
                 </div>
               </a>
@@ -1143,6 +1158,7 @@
                     src="./resources/img/famosos/jenniffer.webp"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Jennifer Lawrence"
+                    loading="lazy"
                   />
                 </div>
               </a>
@@ -1160,6 +1176,7 @@
                     src="./resources/img/famosos/robert.webp"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Robert Downey Jr."
+                    loading="lazy"
                   />
                 </div>
               </a>
@@ -1177,6 +1194,7 @@
                     src="./resources/img/famosos/emma.webp"
                     class="rounded-circle object-fit-cover hover-animado"
                     alt="Emma Stone"
+                    loading="lazy"
                   />
                 </div>
               </a>
@@ -1188,7 +1206,6 @@
         </div>
       </div>
     </div>
-
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
       <div class="text-center mt-3">
@@ -1266,6 +1283,28 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Obtener el botón
+      const btnBackToTop = document.getElementById("btn-back-to-top");
+  
+      // Función para mostrar/ocultar el botón dependiendo del scroll
+      window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btnBackToTop.style.display = "block";
+        } else {
+          btnBackToTop.style.display = "none";
+        }
+      };
+  
+      // Función para volver arriba cuando se hace clic en el botón
+      btnBackToTop.addEventListener("click", function() {
+        // Para Safari
+        document.body.scrollTop = 0;
+        // Para Chrome, Firefox, IE y Opera
+        document.documentElement.scrollTop = 0;
+      });
+    </script>
 
     <!-- Script para inicializar Popover footer -->
     <script>
